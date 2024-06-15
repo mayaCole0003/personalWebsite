@@ -4,7 +4,7 @@ body {
     color: #333;
 }
 
-.top-nav a, .main-nav a {
+.top-nav a, .main-nav a, nav a {
     text-decoration: none;
     color: #333;
     padding: 10px;
@@ -24,15 +24,57 @@ body {
     padding: 10px 0;
 }
 
-#projects article {
-    background: #eee;
-    padding: 20px;
-    margin: 20px 0;
+.header-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: url('path_to_your_paint_splatter_image.png') no-repeat;
+    background-size: cover;
+    color: white;
 }
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* 
+nav {
+    display: flex;
+    gap: 10px;
+} */
+
+.spacer {
+    flex: 1; /* Takes up all available space */
+}
+
+
+nav {
+    display: flex;
+    gap: 40px; 
+    align-items: stretch; 
+}
+
+nav a {
+    color: rgb(35, 13, 13); 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+}
+
 
 footer {
     text-align: center;
     padding: 20px 0;
     background: #222;
     color: white;
+}
+
+#projects article {
+    background: #eee;
+    padding: 20px;
+    margin: 20px 0;
 }
