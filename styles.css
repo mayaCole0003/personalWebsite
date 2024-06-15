@@ -20,17 +20,39 @@ body {
 }
 
 .main-nav {
-    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    background: transparent;
     padding: 10px 0;
+    font-size: 30px;
+    gap: 120px;
 }
+
+.explore-button {
+    width: 200px;
+    height:70px;
+    background-color: orange; /* Button color */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    padding: 10px 20px; /* Padding around text */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.explore-button:hover {
+    background-color: #e69500; /* Darker shade of orange on hover */
+}
+
 
 .header-content {
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
-    background: url('path_to_your_paint_splatter_image.png') no-repeat;
-    background-size: cover;
+    background: url('maya-logo.png') no-repeat;
+    background-size: fit;
     color: white;
 }
 
