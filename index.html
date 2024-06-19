@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya Cole - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -27,16 +28,31 @@
             <a href="#developer">Developer</a>
             <a href="#modeller">3D Modeller</a>
         </nav>
-        </div>
     </header>
     
     <main>
         <section id="projects">
             <h2>Recent Projects</h2>
-            <article>
-                <h3>Catharsis</h3>
-                <p>Working to repair relationships</p>
-            </article>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="laptop.png" alt="Project Image">
+                        <div class="carousel-caption">
+                            <h3>Catharsis</h3>
+                            <p>Working to repair relationships</p>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items here -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left carousel-control-prev-icon"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right carousel-control-next-icon"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
         
         <section id="about">
@@ -48,6 +64,9 @@
     <footer>
         <p>Copyright © 2024 Maya Cole</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-

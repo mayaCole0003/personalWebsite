@@ -2,91 +2,75 @@ body {
     font-family: Arial, sans-serif;
     background: #fff;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.top-nav a, .main-nav a, nav a {
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+nav a {
     text-decoration: none;
     color: #333;
     padding: 10px;
-}
-
-.header, .main-nav, .top-nav {
-    text-align: center;
+    font-size: 16px;
 }
 
 .title h1 {
-    font-size: 3em;
-    color: #222;
+    font-size: 6em;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    background: url('maya-logo.png') no-repeat center;
+    background-size: cover;
+    margin: 20px 0;
 }
 
 .main-nav {
     display: flex;
     justify-content: center;
-    background: transparent;
+    gap: 230px;
     padding: 10px 0;
-    font-size: 30px;
-    gap: 120px;
+    margin-top: -100px; 
+    z-index: 1;
+}
+
+.main-nav a, .main-nav button {
+    font-size: 25px;
 }
 
 .explore-button {
-    width: 200px;
-    height:70px;
-    background-color: orange; /* Button color */
-    color: white; /* Text color */
-    font-size: 16px; /* Text size */
-    padding: 10px 20px; /* Padding around text */
-    border: none; /* No border */
-    border-radius: 50px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .explore-button:hover {
-    background-color: #e69500; /* Darker shade of orange on hover */
+    background-color: #e69500;
 }
-
-
-.header-content {
-    position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: url('maya-logo.png') no-repeat;
-    background-size: fit;
-    color: white;
-}
-
-.icon-circle {
-    width: 50px;
-    height: 50px;
-    background-color: orange;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-/* 
-nav {
-    display: flex;
-    gap: 10px;
-} */
-
-.spacer {
-    flex: 1; /* Takes up all available space */
-}
-
-
-nav {
-    display: flex;
-    gap: 40px; 
-    align-items: stretch; 
-}
-
-nav a {
-    color: rgb(35, 13, 13); 
-    text-decoration: none; 
-    font-weight: bold; 
-    padding: 10px 15px; 
-}
-
 
 footer {
     text-align: center;
@@ -99,4 +83,93 @@ footer {
     background: #eee;
     padding: 20px;
     margin: 20px 0;
+}
+
+#projects {
+    background-color: #504047;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 45px;
+    font-style: italic;
+    color: orange;
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.carousel {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #5A5A5A; */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    transition: transform 0.6s ease;
+    text-align: center;
+}
+
+.carousel-item.active {
+    display: block;
+    background: transparent;
+}
+.carousel-caption {
+    position: absolute;
+    top: 450px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.carousel-caption h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 30px;
 }
