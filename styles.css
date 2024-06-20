@@ -1,7 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #fff;
-    color: #333;
+    color: #504047;
     margin: 0;
     padding: 0;
 }
@@ -89,6 +89,7 @@ footer {
     background-color: #504047;
     padding: 50px 0;
     text-align: center;
+    z-index: -10;
 }
 
 #carousel-item{
@@ -130,7 +131,31 @@ footer {
 .carousel-item.active {
     display: block;
     background: transparent;
+    z-index: 1;
 }
+.carousel-item.active:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: -1;
+    animation: expand-circle 0.5s forwards;
+}
+
+@keyframes expand-circle {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 .carousel-caption {
     position: absolute;
     top: 450px;
