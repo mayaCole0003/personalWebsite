@@ -118,6 +118,97 @@ header p {
     text-decoration: underline;
 }
 
+.discovery-process-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    gap: 80px;
+}
+
+.discovery-number {
+    color: teal;
+    font-size: 60px;
+    font-weight: bold;
+}
+.users-idef-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+
+.title {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 1rem;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.grid-item ul {
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.grid-item li strong {
+    color: #000;
+}
+
+.client-feedback {
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+    color: #333;
+}
+
+.client-feedback p:last-child {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.client-feedback p:last-child {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
 .section {
     padding: 4rem 1rem;
 }
@@ -130,14 +221,104 @@ header p {
     color: #343a40;
 }
 
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #343a40;
+}
+
+
 .section.bg-light {
     background-color: #f8f9fa;
+}
+
+
+.design-typography-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.design-system, .typography {
+    flex: 1;
+    margin: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.design-system img, .typography img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.design-system h2, .typography h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.design-system p, .typography p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
 }
 
 .img-fluid {
     max-width: 100%;
     height: auto;
     margin-bottom: 1.5rem;
+}
+
+
+.lookback-forward-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; /* Adjust padding for spacing within the section */
+}
+
+.lookback, .lookforward {
+    flex: 1;
+    margin: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.lookback h2, .lookforward h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.lookback p, .lookforward p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.lookback ul, .lookforward ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.lookback li, .lookforward li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.lookback li strong, .lookforward li strong {
+    color: #000;
 }
 
 footer {
