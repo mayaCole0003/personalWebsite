@@ -216,6 +216,7 @@ footer {
 }
 
 .about-container {
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,14 +224,14 @@ footer {
     background: #fff;
     border: 1px solid #eee;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
 }
 
 .about-image {
     max-width: 450px;
     max-height: 250px;
-    border-radius: 20%;
-    margin-right: 20px;
+    border-radius: 10%;
+    margin-right: 250px; 
 }
 
 .about-text {
@@ -239,7 +240,7 @@ footer {
 
 .about-text h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
+    font-size: 41px;
     margin-bottom: 10px;
 }
 
@@ -260,4 +261,39 @@ footer {
 
 .more-button:hover {
     background-color: #e69500;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.contact-icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #f8f9fa;
+    border: 2px solid #343a40;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+}
+
+.contact-content a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
 }
