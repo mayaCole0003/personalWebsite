@@ -30,9 +30,28 @@ header {
 .icon-circle {
     width: 60px;
     height: 60px;
-    background-color: orange;
+    background-color: transparent;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.fa-solid.fa-wand-magic-sparkles {
+    font-size: 60px;
+    color: orange;
+}
+
+/* .fa-solid.fa-spray-can {
+    font-size: 60px;
+    color: orange;
+}
+
+.fa-solid.fa-brush {
+    font-size: 60px;
+    color: orange;
+} */
+
 
 nav a {
     text-decoration: none;
@@ -71,7 +90,7 @@ nav a {
     color: #ff0000;
 }
 
-.explore-button {
+/* .explore-button {
     width: 150px;
     height: 50px;
     background-color: orange;
@@ -85,7 +104,36 @@ nav a {
 
 .explore-button:hover {
     background-color: #e69500;
+} */
+
+.explore-button {
+    width: 150px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+.explore-button:hover {
+    animation: tilt-enlarge 1s infinite alternate;
+}
+
+@keyframes tilt-enlarge {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(-10deg);
+    }
+    100% {
+        transform: scale(1.2) rotate(10deg);
+    }
+}
+
 
 footer {
     text-align: center;
