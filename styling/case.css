@@ -34,7 +34,7 @@ header {
 .icon-circle {
     width: 50px;
     height: 50px;
-    background-color: orange;
+    background-color: #008080;
     border-radius: 50%;
     display: inline-block;
 }
@@ -151,8 +151,8 @@ header p {
 }
 
 .process-circle:hover {
-    background-color: orange; /* Change background color to orange on hover */
-    border-color: orange; /* Optionally change border color to orange as well */
+    background-color: #008080; /* Change background color to orange on hover */
+    border-color: #008080; /* Optionally change border color to orange as well */
 }
 
 
@@ -281,10 +281,18 @@ header p {
 }
 
 .section-subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 2rem;
     text-align: center;
+    color: #343a40;
+}
+
+.section-subtitle-personas {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    text-align: left;
     color: #343a40;
 }
 
@@ -381,7 +389,7 @@ header p {
 }
 
 footer {
-    background: #f8f9fa;
+    background: #008080;
     color: #343a40;
     padding: 2rem 0;
     border-top: 1px solid #e9ecef;
@@ -593,6 +601,7 @@ footer p {
 }
 
 .col-md-3 ul {
+    font-size: 20px;
     list-style: circle;
     margin-top: 0.5rem; /* Adjust the value to increase/decrease the space */
 }
@@ -602,22 +611,153 @@ footer p {
 }
 
 /* // lines above ux/ui */
-.custom-hr-top {
+
+.customLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+/* .custom-hr-top {
     border: 0;
-    height: 1px; /* Adjust the thickness of the line */
-    background-color: #343a40; /* Adjust the color of the line */
-    margin: 4rem 0; /* Adjust the space around the line */
-    width: 100%; /* Adjust the width to desired value */
+    height: 1px;
+    background-color: #343a40; 
+    width: 3400px; 
+    margin: 4rem auto;
+} */
+
+.hr {
+    height: 3px;
+    color: red;
+}
+
+.custom-hr-bottom {
+    margin: 10rem auto; /* Ensure it's centered regardless of its length */
+}
+
+/* // user personas */
+
+.persona-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333;
 }
 
 
-.custom-hr-bottom {
-    border: 0;
-    height: 1px; /* Adjust the thickness of the line */
-    background-color: #343a40; /* Adjust the color of the line */
-    margin: 10rem 0; /* Adjust the space around the line */
-    width: 100%;
+.journey-map {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+}
 
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.time-block {
+    flex: 1;
+    background-color: #d1e7dd;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+}
+
+.time-block h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.journey-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.journey-column {
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.user-action, .experience {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.user-action {
+    border-left: 5px solid #6c757d;
+}
+
+.experience {
+    border-left: 5px solid #198754;
+}
+
+.user-action p, .experience p {
+    margin: 0 0 1rem 0;
+}
+
+.dashed-line {
+    border-top: 2px dashed #000;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.user-action-label {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.experiences-label {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
