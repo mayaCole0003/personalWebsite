@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff;
+    background: #ffffff;
     color: #504047;
     margin: 0;
     padding: 0;
@@ -75,6 +75,7 @@ header {
     z-index: 999;
 
 }
+
 
 
 

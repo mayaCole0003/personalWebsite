@@ -39,11 +39,11 @@
     <main>
         <!-- Expanding Circle -->
         <div id="expanding-circle" class="expanding-circle">
+            </div>
             <div id="circle-content" class="circle-content">
                 <h1>About Me</h1>
                 <h1>Artwork</h1>
                 <h1>Contact</h1>
-            </div>
         </div>
 
         <section id="projects">
@@ -121,6 +121,8 @@
         document.getElementById('wand').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.toggle('expand');
             document.getElementById('circle-content').classList.toggle('visible');
+            document.getElementById('click-back').classList.toggle('visible');
+
 
         });
     </script>

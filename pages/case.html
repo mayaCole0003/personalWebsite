@@ -1,34 +1,34 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study - Dartpop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="/styling/case.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Case Study - Dartpop</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="/styling/case.css">
+    </head>    
 <body>
-    <header class="text-center py-5">
-        <div class="container">
-            <div class="header-content">
-                <a href="/index.html" class="icon-circle"></a>
-                <div class="spacer"></div> 
-                <nav>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">RESUME</a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
-                    <a href="mayafcole@gmail.com" target="_blank" rel="noopener noreferrer">EMAIL</a>
-                </nav>
+    <header>
+        <div class="header-content">
+            <div class="icon-circle" id="wand2">
+                <a href="/index.html" class="icon-circle" id="wand">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </a>            </div>
+            <div class="spacer"></div>
+            <nav>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">RESUME</a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                <a href="mailto:your-email@example.com" target="_blank" rel="noopener noreferrer">EMAIL</a>
+            </nav>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item text">
+                <h1>Dartpop</h1>
+                <p>DartPop is a thrifting app for Dartmouth students to list and buy items (ranging from clothes to textbooks) from each other, allowing them to update their wardrobes and get rid of clothes they no longer wear during the term.</p>
             </div>
-            <div class="flex-container">
-                <div class="flex-item text">
-                    <h1>Dartpop</h1>
-                    <p>DartPop is a thrifting app for Dartmouth students to list and buy items (ranging from clothes to textbooks) from each other, allowing them to update their wardrobes and get rid of clothes they no longer wear during the term.</p>
-                </div>
-                <div class="flex-item image">
-                    <img src="/imgs/dartpop-mockup.png" alt="Understanding the Problem" class="img-fluid">
-                </div>
+            <div class="flex-item image">
+                <img src="/imgs/dartpop-mockup.png" alt="Understanding the Problem" class="img-fluid">
             </div>
         </div>
     </header>
@@ -119,7 +119,7 @@
                 <div class="col-md-3">
                     <h3>Timeline</h3>
                     <ul>
-                        <li>20 week sprint</li>
+                        <li>20 weeks</li>
                         <li>Research 2 weeks</li>
                         <li>Design 8 weeks</li>
                         <li>Develop 10 weeks</li>
@@ -233,9 +233,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 order-md-2">
-                    <img src="/imgs/dartpop-userResearchiMG.png" alt="User Research" class="img-fluid">
+                    <img src="/imgs/HELLOdartpop-reserach.png" alt="competitve analysis img" class="img-fluid">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-6 order-md-1">
                     <h2>Competitive </h2>
                     <h2> Analysis</h2>
                     <p>After a thorough analysis of the current market, we came up with 6 current apps that would guide our process. Here is a list.</p>
@@ -250,9 +250,24 @@
     
                             </ul>
                         </p>
-
-
                     <!-- <p>Our project began with preliminary user interviews, inquiring about people’s attitude and experience with e-commerce apps and any challenges they have. We found that their foremost problems revolved around optimizing both time and cost efficiency.</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 order-md-1">
+                    <img src="/imgs/WISP App Ideas-1 1dartpop-sketchWork (1).png" alt="User Research" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-2" style="text-align: center">
+                    <p>Here we compiled a list of different things we should prioritize.</p>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <img src="/imgs/Section 1dartpop-HMW.png" alt="User Research" class="img-fluid">
+                </div>
+                <div class="col-md-6 order-md-2" style="text-align: center">
+                    <p>Here we voted on various "How Might We..."s to determine our user's needs.</p>
                 </div>
             </div>
         </div>
@@ -392,27 +407,25 @@
 
 
    
-    <section class="section bg-light">
+    <<section class="section bg-light">
         <div class="container">
             <h2 class="section-title">Ethical considerations</h2>
+            <h2 class="section-subtitle">What hidden ramifications can our app have?</h2>
             <div class="key-takeaways">
                 <div class="takeaway">
-                    <div class="takeaway-number">1.</div>
                     <div class="takeaway-text">
+                        <div class="takeaway-number">1.</div>
                         Students want to source their clothes from other students, but are concerned about the quality of the clothes and potentially create a sense of discomfort with their peers if they are dissatisfied with their purchase.
-                    </div>
-                </div>
-                <div class="takeaway">
-                    <div class="takeaway-number">2.</div>
-                    <div class="takeaway-text">
+                        <div class="takeaway-number">2.</div>
                         Students’ main priority when sourcing clothes are its low cost and how fast it ships to them.
                     </div>
                 </div>
-                <img src="/imgs/dartpop-ethics.png" alt="User Research" class="img-fluid custom-img-size-num">
-
+                <div class="ethics-image-container">
+                    <img src="/imgs/dartpop-ethics.png" alt="User Research" class="img-fluid ethics-image">
+                </div>
             </div>
         </div>
-    </section>
+    </section>    
 
     <h2 class="section-title">Define</h2>
 
