@@ -19,9 +19,10 @@ h3 {
 }
 
 header {
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
+    background-color: #ffffff;
     padding: 2rem 0;
-    border-bottom: 1px solid #e9ecef;
+    /* border-bottom: 1px solid #e9ecef; */
 }
 
 .header-content {
@@ -92,7 +93,7 @@ header p {
 
 .design-process-title-container
 {
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .process-container {
@@ -141,7 +142,7 @@ header p {
 .process-circle {
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #000;
     border-radius: 50%;
     display: flex;
@@ -157,7 +158,7 @@ header p {
 
 
 .process-line {
-    width: 50px;
+    width: 95px;
     height: 2px;
     background-color: #000;
     margin: 0 1rem;
@@ -186,7 +187,10 @@ header p {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #ffffff;
+    /* background-color: #008080; */
+
 }
 
 .title {
@@ -203,7 +207,7 @@ header p {
 }
 
 .grid-item {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     /* border: 1px solid #ddd; */
     border-radius: 8px;
@@ -230,13 +234,36 @@ header p {
     color: #000;
 }
 
+.client-feedback-container-1 {
+    display: flex;
+    width: 850px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 128, 128, 0.2);
+     margin: 0 auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.client-feedback-container {
+    display: flex;
+    width: 650px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 128, 128, 0.2); */
+     margin: 0 auto;
+    padding: 20px;
+    border-radius: 5%;
+}
+
 .client-feedback {
-    margin-top: 2rem;
-    margin-bottom: 8rem;;
     text-align: center;
     font-style: italic;
     color: #333;
 }
+
 
 .client-feedback p:last-child {
     margin-top: 1rem;
@@ -280,7 +307,7 @@ header p {
 .process-title{
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: -4rem;
     text-align: center;
     color: #343a40;
 }
@@ -303,7 +330,9 @@ header p {
 
 
 .section.bg-light {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #ffffff;
+
 }
 
 
@@ -318,7 +347,7 @@ header p {
 .design-system, .typography {
     flex: 1;
     margin: 1rem;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -359,7 +388,7 @@ header p {
 .lookback, .lookforward {
     flex: 1;
     margin: 1rem;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -410,7 +439,8 @@ footer {
 .contact-icon-circle {
     width: 50px;
     height: 50px;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #ffffff;
     border: 2px solid #343a40;
     border-radius: 50%;
     display: flex;
@@ -502,7 +532,7 @@ footer p {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 48em;
+    height: 35em;
     margin: auto;
     border-radius: 3px;
     background: #fff;
@@ -677,7 +707,8 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 8px;
     position: relative;
