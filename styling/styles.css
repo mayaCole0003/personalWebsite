@@ -27,15 +27,56 @@ header {
     color: #ff0000;
 }
 
+/* Wand Icon Styling */
 .icon-circle {
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    cursor: pointer;
 }
+
+/* Expanding Circle Styling */
+.expanding-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    z-index: 0;
+    pointer-events: none; /* Prevents interactions with the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expanding-circle.expand {
+    width: 5000px;
+    height: 5000px;
+    top: -2000px;
+    left: -2000px;
+    background-color: orange;
+}
+
+/* Circle Content Styling */
+.circle-content {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 200rem;
+
+
+}
+
+.circle-content.visible {
+    display: flex;
+    font-size: 200rem;
+    gap: 1rem;
+    color: white;
+    z-index: 999;
+
+}
+
+
 
 .fa-solid.fa-wand-magic-sparkles {
     font-size: 60px;

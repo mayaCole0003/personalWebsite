@@ -259,6 +259,10 @@ header p {
     gap: 1rem;
 }
 
+.row {
+    margin-bottom: 100px;
+}
+
 
 .section {
     padding: 4rem 1rem;
@@ -267,7 +271,8 @@ header p {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
     text-align: center;
     color: #343a40;
 }
