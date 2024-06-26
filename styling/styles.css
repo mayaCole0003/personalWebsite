@@ -42,7 +42,7 @@ header {
     border-radius: 50%;
     transition: all 0.5s ease;
     z-index: 0;
-    pointer-events: none; /* Prevents interactions with the circle */
+    pointer-events: none; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,29 +54,26 @@ header {
     top: -2000px;
     left: -2000px;
     background-color: orange;
+    z-index: 1;
 }
 
-/* Circle Content Styling */
 .circle-content {
-    display: none;
+    display: none;  
     text-align: center;
     flex-direction: column;
-    color: white;
-    font-size: 200rem;
-
-
+    color: red;
+    font-size: 2rem; 
+    z-index: 1000;
+ 
 }
 
 .circle-content.visible {
     display: flex;
-    font-size: 200rem;
-    gap: 1rem;
+    z-index: 1000;
+    /* gap: 1rem; */
+    font-size: 20rem;  
     color: white;
-    z-index: 999;
-
 }
-
-
 
 
 .fa-solid.fa-wand-magic-sparkles {
@@ -237,7 +234,7 @@ footer {
 .carousel-item.active {
     display: block;
     background: transparent;
-    z-index: 1;
+    z-index: 0;
 }
 .carousel-item.active:hover::before {
     content: '';
