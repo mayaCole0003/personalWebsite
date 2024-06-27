@@ -35,14 +35,15 @@ header {
 /* Expanding Circle Styling */
 .expanding-circle {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
     border-radius: 50%;
     transition: all 0.5s ease;
     z-index: 0;
-    pointer-events: none; 
+    pointer-events: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,34 +52,84 @@ header {
 .expanding-circle.expand {
     width: 5000px;
     height: 5000px;
-    top: -2000px;
-    left: -2000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: orange;
     z-index: 1;
 }
 
+/* Circle Content Styling */
 .circle-content {
-    display: none;  
-    text-align: center;
-    flex-direction: column;
-    color: red;
-    font-size: 2rem; 
-    z-index: 1000;
- 
+    display: none;
 }
 
 .circle-content.visible {
     display: flex;
-    z-index: 1000;
-    /* gap: 1rem; */
-    font-size: 20rem;  
-    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* Adjust gap as needed */
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
 }
+
+.circle-item {
+    flex: 0 1 auto; /* Allow items to grow and shrink */
+    max-width: 200px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
+}
+
+.d3dmodel {
+    width: 200px;
+    height: 200px;
+}
+
+.model {
+    width: 200px;
+    height: 400px;
+}
+
+.circle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Adjust gap as needed */
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
+
+.second-row {
+    display: none; /* Initially hide the second row */
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 90px; /* Different gap for the second row */
+    width: auto; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+}
+
+.circle-content.visible .second-row {
+    display: flex; /* Show the second row when circle-content is visible */
+}
+
+.second-item {
+    max-width: 500px; /* Different max width for the second row items */
+    max-height: 100px; /* Different max height for the second row items */
+}
+
+
 
 
 .fa-solid.fa-wand-magic-sparkles {
     font-size: 60px;
     color: orange;
+}
+
+.fa-solid.fa-shirt {
+    font-size: 60px;
+    color: white;
 }
 
 /* .fa-solid.fa-spray-can {

@@ -40,12 +40,19 @@
         <!-- Expanding Circle -->
         <div id="expanding-circle" class="expanding-circle">
             <div id="circle-content" class="circle-content">
-                <h1>About Me</h1>
-                <h1>Artwork</h1>
-                <h1>Contact</h1>
+                <div class="circle-row">
+                    <img src="/imgs/clothesIMG.png" alt="Clothes Image" class="circle-item">
+                    <img src="/imgs/3dmodel.png" alt="3d model Image" class="circle-item d3dmodel">
+                    <img src="/imgs/PANTS.png" alt="pants Image" class="circle-item model">
+                </div>
+                <div class="circle-row second-row">
+                    <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item second-item">
+                    <img src="/imgs/second2.png" alt="Second Image 2" class="circle-item second-item">
+                    <img src="/imgs/second3.png" alt="Second Image 3" class="circle-item second-item">
+                </div>
             </div>
         </div>
-
+        
         <section id="projects">
             <h2>Recent Projects</h2>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -112,7 +119,6 @@
         </div>
         <p>© 2024 Maya Cole. All Rights Reserved. Built by me!</p>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -121,7 +127,8 @@
         document.getElementById('wand').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.toggle('expand');
             document.getElementById('circle-content').classList.toggle('visible');
-            console.log("Classes toggled");
+            document.getElementById('circle-row second-row').classList.toggle('visible');
+
 
 
         });
