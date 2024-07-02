@@ -5,8 +5,10 @@ body {
     padding: 0;
     /* background-color: #f8f9fa; */
     background-color: #ffffff;
+}
 
-
+a {
+    text-decoration: none;
 }
 
 
@@ -17,41 +19,6 @@ h3 {
     margin-left: -20px;
 
 }
-
-/* header {
-    background-color: #ffffff;
-    padding: 2rem 0;
-} */
-
-/* .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.icon-circle {
-    width: 50px;
-    height: 50px;
-    background-color: #008080;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.spacer {
-    width: 700px;
-} */
-
-/* nav a {
-    margin: 0 10px;
-    font-size: 1.2rem;
-    color: #343a40;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-} */
 
 header {
     position: relative;
@@ -171,7 +138,7 @@ header p {
 
 /* // for user resarach img */
 .custom-img-size-num {
-    width: 50%; /* Adjust width as needed */
+    width: 50%; 
     /* max-width: 400px; Set a maximum width */
     height: auto;
     object-fit: contain; 
@@ -190,8 +157,8 @@ header p {
 }
 
 .process-circle:hover {
-    background-color: #008080; /* Change background color to orange on hover */
-    border-color: #008080; /* Optionally change border color to orange as well */
+    background-color: #008080; 
+    border-color: #008080; 
 }
 
 
@@ -201,6 +168,14 @@ header p {
     background-color: #000;
     margin: 0 1rem;
 }
+
+.section-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max;
+}
+
 
 .discovery-process-container {
     display: flex;
@@ -225,9 +200,7 @@ header p {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: #f8f9fa; */
     background-color: #ffffff;
-    /* background-color: #008080; */
 
 }
 
@@ -323,6 +296,40 @@ header p {
     flex-direction: row;
     gap: 1rem;
 }
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-checkbox {
+    display: none;
+}
+
+.img-checkbox:checked + label img {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    z-index: 10; /* Ensure enlarged image appears above other content */
+}
+
+.img-checkbox + label img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* To revert the image when clicking outside */
+.img-checkbox:checked + label::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 5;
+}
+
 
 .row {
     margin-bottom: 100px;
@@ -474,10 +481,14 @@ footer {
     margin-bottom: 1rem;
 }
 
+
+.contact-icon-link {
+    text-decoration: none;
+}
+
 .contact-icon-circle {
     width: 50px;
     height: 50px;
-    /* background-color: #f8f9fa; */
     background-color: #ffffff;
     border: 2px solid #343a40;
     border-radius: 50%;
@@ -493,6 +504,16 @@ footer {
     font-size: 1.2rem;
 }
 
+.contact-content p a {
+    color: #343a40;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content p a:hover {
+    text-decoration: none;
+}
+
 .contact-content a {
     color: #343a40;
     text-decoration: none;
@@ -500,7 +521,7 @@ footer {
 }
 
 .contact-content a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 footer p {
@@ -512,7 +533,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem; /* Adjust the gap as needed */
+    gap: 2rem; 
 }
 
 .key-takeaways h2 {
@@ -542,12 +563,28 @@ footer p {
 
 .ethics-image {
     width: 200%;
-    max-width: 800px; /* Adjust the maximum width as needed */
+    max-width: 800px; 
     height: auto;
     object-fit: contain;
     margin: 0;
 }
 
+
+.circle {
+    width: 400px;
+    height:100px;
+    background-color: #008080;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.circle i {
+    color: #ffffff;
+    font-size: 50px;
+}
 
 
 
@@ -574,94 +611,8 @@ footer p {
         width: 500px;
     }
 }
-/* // carusel */
-
-/* Add this to the beginning of carousel.css */
-/* #resource-slider {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 35em;
-    margin: auto;
-    border-radius: 3px;
-    background: #fff;
-    overflow: scroll;
-  }
-   */
-  /* #resource-slider .arrow {
-    cursor: pointer;
-    position: absolute;
-    width: 2em;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    outline: 0;
-    background: transparent;
-  } */
-  
-  /* #resource-slider .arrow:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  #resource-slider .arrow:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 0.75em;
-    height: 0.75em;
-    margin: auto;
-    border-style: solid;
-  }
-  
-  #resource-slider .prev {
-    left: 0;
-    bottom: 0;
-  }
-
-  .arrow next {
-    border: none;
-  }
-  
-  #resource-slider .prev:before {
-    left: 0.25em;
-    border-width: 3px 0 0 3px;
-    transform: rotate(-45deg);
-  }
-  
-  #resource-slider .next {
-    right: 0;
-    bottom: 0;
-  }
-  
-  #resource-slider .next:before {
-    right: 0.25em;
-    border-width: 3px 3px 0 0;
-    transform: rotate(45deg);
-  }
-/*    */
-  /* #resource-slider .resource-slider-frame {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  #resource-slider .resource-slider-item {
-    flex: 0 0 25%;
-    scroll-snap-align: start;
-  }
-  
-  #resource-slider .resource-slider-inset {
-    margin: 0.5em 0.25em;
-  } */ */
-
-
-  /* Add this to the beginning of carousel.css */
+/* // carousel */
+   
 #resource-slider {
     position: relative;
     top: 0;
@@ -669,12 +620,12 @@ footer p {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 35em;
+    height: 42em;
     margin: auto;
     border-radius: 3px;
-    background: #fff;
+    background: #ffffff;
     overflow-x: scroll;
-    overflow-y: hidden; /* Prevent vertical scrolling */
+    overflow-y: hidden; 
 }
 
 #resource-slider .arrow {
@@ -772,7 +723,6 @@ footer p {
 
 
 
-  /* ////// */
   /* user personas */
 
   .custom-img-size-container {
@@ -783,8 +733,8 @@ footer p {
 }
 
 .custom-img-size {
-    width: 200%; /* Adjust width as needed */
-    max-width: 900px; /* Set a maximum width */
+    width: 200%; 
+    max-width: 900px; 
     height: auto;
     object-fit: contain; 
     margin: 0 auto; /* Center the image horizontally */
@@ -814,13 +764,7 @@ footer p {
     justify-content: center;
     align-items: center;
 }
-/* .custom-hr-top {
-    border: 0;
-    height: 1px;
-    background-color: #343a40; 
-    width: 3400px; 
-    margin: 4rem auto;
-} */
+
 
 .hr {
     height: 3px;
@@ -828,7 +772,7 @@ footer p {
 }
 
 .custom-hr-bottom {
-    margin: 10rem auto; /* Ensure it's centered regardless of its length */
+    margin: 10rem auto; 
 }
 
 /* // user personas */
@@ -906,7 +850,7 @@ footer p {
 }
 
 .user-action, .experience {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -933,7 +877,7 @@ footer p {
 }
 
 .vertical-text {
-    writing-mode: vertical-lr; /* Flipping the writing direction */
+    writing-mode: vertical-lr; 
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
