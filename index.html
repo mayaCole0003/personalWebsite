@@ -40,15 +40,19 @@
         <!-- Expanding Circle -->
         <div id="expanding-circle" class="expanding-circle">
             <div id="circle-content" class="circle-content">
+                <button id="close-button" class="close-button">Back</button>
+                <h2> Click around for some suprises!</h2>
                 <div class="circle-row">
+                    <a href="link-to-clothesIMG.html">
                     <img src="/imgs/clothesIMG.png" alt="Clothes Image" class="circle-item">
-                    <img src="/imgs/3dmodel.png" alt="3d model Image" class="circle-item d3dmodel">
-                    <img src="/imgs/PANTS.png" alt="pants Image" class="circle-item model">
-                </div>
-                <div class="circle-row second-row">
-                    <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item second-item">
-                    <img src="/imgs/second2.png" alt="Second Image 2" class="circle-item second-item">
-                    <img src="/imgs/second3.png" alt="Second Image 3" class="circle-item second-item">
+                    </a>
+                    <img src="/imgs/3dmodel.png" alt="3d model Image" class="circle-item">
+                    <img src="/imgs/PANTS.png" alt="pants Image" class="circle-item">
+                    <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item">
+                    <img src="/imgs/seadragon.png" alt="Second Image 2" class="circle-item">
+                    <i class="fa-solid fa-fish circle-item"></i>
+                    <img src="/imgs/earbuds.png" alt="Second Image 3" class="circle-item">
+                    <!-- <img src="/imgs/second3.png" alt="Second Image 3" class="circle-item"> -->
                 </div>
             </div>
         </div>
@@ -82,6 +86,27 @@
                         <div class="carousel-caption">
                             <h3>Birdie Bites</h3>
                             <p>Food for the par</p>
+                        </div>
+                    </div>
+
+                    <!-- //filler -->
+                    <div class="carousel-item">
+                        <a href="/pages/case.html">
+                            <img src="/imgs/homePage-BirdieBites.png"  alt="Project Image">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>Mahjouba Initiative</h3>
+                            <p>Reviving the Morrocoan craft sector (Coming soon)</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="/pages/case.html">
+                            <img src="/imgs/homePage-BirdieBites.png"  alt="Project Image">
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>Biblio</h3>
+                            <p>Community book sharing (Coming soon)</p>
                         </div>
                     </div>
                 </div>
@@ -125,13 +150,15 @@
     <script>
         // JavaScript to handle the expanding and collapsing of the circle
         document.getElementById('wand').addEventListener('click', function() {
-            document.getElementById('expanding-circle').classList.toggle('expand');
-            document.getElementById('circle-content').classList.toggle('visible');
-            document.getElementById('circle-row second-row').classList.toggle('visible');
+    document.getElementById('expanding-circle').classList.toggle('expand');
+    document.getElementById('circle-content').classList.toggle('visible');
+});
 
+document.getElementById('close-button').addEventListener('click', function() {
+    document.getElementById('expanding-circle').classList.remove('expand');
+    document.getElementById('circle-content').classList.remove('visible');
+});
 
-
-        });
     </script>
 </body>
 
