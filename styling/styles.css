@@ -429,6 +429,10 @@ footer {
     /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
 }
 
+.mockup {
+    width: 720px;
+}
+
 .about-image {
     max-width: 850px;
     max-height: 650px;
