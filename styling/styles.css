@@ -23,9 +23,9 @@ header {
     text-decoration: none;
 }
 
-.header-content nav a:hover {
+/* .header-content nav a:hover {
     color: #ff0000;
-}
+} */
 
 .icon-circle {
     cursor: pointer;
@@ -241,7 +241,8 @@ nav a {
 }
 
 .main-nav a:hover {
-    color: #ff0000;
+    /* color: #ff0000; */
+    color: #504047;
 }
 
 /* .explore-button {
