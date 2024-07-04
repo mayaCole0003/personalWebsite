@@ -1,21 +1,72 @@
 document.addEventListener("DOMContentLoaded", function() {
     const circleContent = document.getElementById('circle-content');
-    const items = document.querySelectorAll('.circle-item');
+    if (circleContent) {
+        const items = document.querySelectorAll('.circle-item');
 
-    // Function to generate random positions
-    function getRandomPosition() {
-        const x = Math.random() * 90; // Use 90% to keep items within the viewport
-        const y = Math.random() * 90;
-        return { x, y };
+        function getRandomPosition() {
+            const x = Math.random() * 90;
+            const y = Math.random() * 90;
+            return { x, y };
+        }
+
+        items.forEach(item => {
+            const { x, y } = getRandomPosition();
+            item.style.left = `${x}vw`;
+            item.style.top = `${y}vh`;
+        });
+
+        circleContent.classList.add('visible');
+    }
+    
+    //graphic design artworks
+    let artworks = [
+        {
+            title: 'Untitled',
+            dateCreated: '2024',
+            medium: 'Photoshop',
+            image: '../imgs/MayaC_designSprint.png'
+        },
+        {
+            title: 'Another Artwork',
+            dateCreated: '2024',
+            medium: 'Photoshop',
+            image: '../imgs/MayaC_poster.jpg'
+        },
+        {
+            title: 'Another Artwork2',
+            dateCreated: '2024',
+            medium: 'Photoshop',
+            image: '../imgs/MayaC_meta-2versionA.png'
+        },
+        {
+            title: 'Another Artwork3',
+            dateCreated: '2024',
+            medium: 'Photoshop',
+            image: '../imgs/mayaC_meta4_versionC.jpg'
+        },
+        {
+            title: 'Another Artwork4',
+            dateCreated: '2024',
+            medium: 'Photoshop',
+            image: '../imgs/MayaC_Module7_project.jpg'
+        }
+    ];
+
+    let currentArtworkIndex = 0;
+
+    function showArtwork(index) {
+        let artwork = artworks[index];
+        document.getElementById('title').innerText = artwork.title;
+        document.getElementById('dateCreated').innerText = artwork.dateCreated;
+        document.getElementById('medium').innerText = artwork.medium;
+        document.getElementById('artImage').src = artwork.image;
     }
 
-    // Apply random positions to each item
-    items.forEach(item => {
-        const { x, y } = getRandomPosition();
-        item.style.left = `${x}vw`;
-        item.style.top = `${y}vh`;
+    document.getElementById('nextArtwork').addEventListener('click', function() {
+        currentArtworkIndex = (currentArtworkIndex + 1) % artworks.length;
+        showArtwork(currentArtworkIndex);
     });
 
-    // Add a class to make the circle content visible
-    circleContent.classList.add('visible');
+    // Initialize the first artwork
+    showArtwork(currentArtworkIndex);
 });
