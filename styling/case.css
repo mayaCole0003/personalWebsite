@@ -298,7 +298,6 @@ header p {
     gap: 1rem;
 }
 
-
 .image-container {
     position: relative;
     display: inline-block;
@@ -900,6 +899,26 @@ footer p {
 
     
 }
+
+.image-row-biblio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.biblio-sketches-image {
+    display: block;
+    margin: 0 auto;
+    width: 80%; 
+    transition: transform 0.3s ease;
+}
+
+.biblio-sketches-image:hover {
+    transform: scale(1.1);
+}
+
 
 
 
