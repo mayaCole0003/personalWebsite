@@ -23,6 +23,10 @@ body {
     flex: 1 1 300px;
 }
 
+.project-item a  {
+    text-decoration: none;
+}
+
 .project-image {
     max-width: 100%;
     height: auto;
