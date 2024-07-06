@@ -400,10 +400,10 @@ header p {
 .design-system, .typography {
     flex: 1;
     margin: 1rem;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 1rem;
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .design-system img, .typography img {
@@ -435,16 +435,15 @@ header p {
 .lookback-forward-section {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0; /* Adjust padding for spacing within the section */
+    padding: 2rem 0;
 }
 
 .lookback, .lookforward {
     flex: 1;
     margin: 1rem;
-    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .lookback h2, .lookforward h2 {
@@ -595,7 +594,6 @@ footer p {
 }
 
 
-
 @media (min-width: 768px) {
     .flex-container {
         flex-direction: row;
@@ -631,7 +629,8 @@ footer p {
     height: 42em;
     margin: auto;
     border-radius: 3px;
-    background: #ffffff;
+    background: transparent;
+    /* background: #ffffff; */
     overflow-x: scroll;
     overflow-y: hidden; 
 }
@@ -933,6 +932,11 @@ footer p {
     width: 80%; 
     transition: transform 0.3s ease;
 }
+
+.biblio-sketches-image + p {
+    margin-top: 40px;
+}
+
 
 .biblio-sketches-image:hover {
     transform: scale(1.1);
