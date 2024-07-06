@@ -248,14 +248,13 @@ header p {
 
 .client-feedback-container-1 {
     display: flex;
-    width: 850px;
-    height: 300px;
+    width:auto;
+    height: 350px;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 128, 128, 0.2);
      margin: 0 auto;
     padding: 20px;
-    border-radius: 5%;
 }
 
 .client-feedback-container {
@@ -267,7 +266,6 @@ header p {
     /* background-color: rgba(0, 128, 128, 0.2); */
      margin: 0 auto;
     padding: 20px;
-    border-radius: 5%;
 }
 
 .client-feedback {
@@ -358,7 +356,8 @@ header p {
 }
 
 .section-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
     font-weight: 300;
     margin-bottom: 2rem;
     text-align: center;
@@ -392,10 +391,10 @@ header p {
 .design-system, .typography {
     flex: 1;
     margin: 1rem;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 1rem;
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .design-system img, .typography img {
@@ -427,16 +426,16 @@ header p {
 .lookback-forward-section {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0; /* Adjust padding for spacing within the section */
+    padding: 2rem 0;
 }
 
 .lookback, .lookforward {
     flex: 1;
     margin: 1rem;
-    background-color: #ffffff;
+    background-color: transparent;
     padding: 1rem;
     border-radius: 8px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .lookback h2, .lookforward h2 {
@@ -742,17 +741,25 @@ footer p {
 
 /* // role ux/ui */
 .col-md-3 h3 {
-    margin-bottom: 1rem; /* Adjust the value to increase/decrease the space */
+    margin-bottom: 1rem;
 }
 
 .col-md-3 ul {
     font-size: 20px;
     list-style: circle;
-    margin-top: 0.5rem; /* Adjust the value to increase/decrease the space */
+    margin-top: 0.5rem; 
 }
 
 .col-md-3 ul li {
-    margin-bottom: 20px; /* Adjust this value to increase/decrease space between bullet points */
+    margin-bottom: 20px;
+}
+
+.col-md-6 ul {
+    padding-left: 20px; 
+}
+
+.col-md-6 ul li {
+    margin-bottom: 15px; 
 }
 
 /* // lines above ux/ui */
