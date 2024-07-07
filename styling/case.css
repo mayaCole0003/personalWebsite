@@ -566,11 +566,12 @@ footer p {
 }
 
 
+
+
 .circle {
-    width: 400px;
-    height:100px;
-    background-color: #008080;
-    border-radius: 50%;
+    width: 300px; 
+    height: 300px;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,7 +579,7 @@ footer p {
 }
 
 .circle i {
-    color: #ffffff;
+    color: #008080;
     font-size: 50px;
 }
 

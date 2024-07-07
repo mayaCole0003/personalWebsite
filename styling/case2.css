@@ -574,12 +574,10 @@ footer p {
     margin: 0;
 }
 
-
 .circle {
-    width: 400px;
-    height:100px;
-    background-color: rgba(248, 151, 5, 0.5);
-    border-radius: 50%;
+    width: 300px; 
+    height: 300px;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -587,9 +585,10 @@ footer p {
 }
 
 .circle i {
-    color: #ffffff;
+    color: rgba(248, 151, 5, 0.75);
     font-size: 50px;
 }
+
 
 
 @media (min-width: 768px) {
