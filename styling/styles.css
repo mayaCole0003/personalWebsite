@@ -23,6 +23,11 @@ header {
     text-decoration: none;
 }
 
+nav a {
+    text-decoration: none;
+}
+
+
 .icon-circle {
     cursor: pointer;
 }
