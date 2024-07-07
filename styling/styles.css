@@ -23,10 +23,6 @@ header {
     text-decoration: none;
 }
 
-/* .header-content nav a:hover {
-    color: #ff0000;
-} */
-
 .icon-circle {
     cursor: pointer;
 }
@@ -91,19 +87,15 @@ header {
 
 /* Positioning each item manually to achieve a random layout */
 .circle-item:nth-child(1) {
-    top: 3%;
-    left: 5%;
-    width:500px;
-    height: 400px;
+    bottom: 63%;
+    left: 73%;
+    width:160px;
+    height: 160px;
 }
 
-.circle-item:nth-child(2) {
-    top: 25%;
-    left: 80%;
-}
 
 .circle-item:nth-child(3) {
-    top: 50%;
+    top: 5%;
     left: 10%;
     width: 300px;
     height: 390px;
@@ -127,14 +119,13 @@ header {
     top: 60%;
     left: 40%;
 }
-
 .circle-item:nth-child(7) {
     top: 30%;
-    left: 40%;
-    width: 320px;
-    height: 300px;
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 200px; 
 }
-
 
 h2 {
     z-index: 30; 
@@ -438,12 +429,12 @@ footer {
     max-width: 850px;
     max-height: 650px;
     border-radius: 10%;
-    margin-right: -250px; /* Reduce the negative margin to bring images closer */
+    margin-right: -250px; 
 }
 
 .about-text {
     max-width: 600px;
-    margin-left: 350px; /* Add margin to move text further away */
+    margin-left: 350px; 
 }
 
 .about-text h3 {
@@ -507,3 +498,42 @@ footer {
     text-decoration: underline;
 }
 
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: 15% auto; 
+    padding: 20px;
+    width: 80%; 
+    max-width: 700px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#video {
+    width: 100%;
+    height: auto;
+}

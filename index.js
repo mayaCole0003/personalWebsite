@@ -18,55 +18,29 @@ document.addEventListener("DOMContentLoaded", function() {
         circleContent.classList.add('visible');
     }
     
-    //graphic design artworks
-    let artworks = [
-        {
-            title: 'Untitled',
-            dateCreated: '2024',
-            medium: 'Photoshop',
-            image: '../imgs/MayaC_designSprint.png'
-        },
-        {
-            title: 'Another Artwork',
-            dateCreated: '2024',
-            medium: 'Photoshop',
-            image: '../imgs/MayaC_poster.jpg'
-        },
-        {
-            title: 'Another Artwork2',
-            dateCreated: '2024',
-            medium: 'Photoshop',
-            image: '../imgs/MayaC_meta-2versionA.png'
-        },
-        {
-            title: 'Another Artwork3',
-            dateCreated: '2024',
-            medium: 'Photoshop',
-            image: '../imgs/mayaC_meta4_versionC.jpg'
-        },
-        {
-            title: 'Another Artwork4',
-            dateCreated: '2024',
-            medium: 'Photoshop',
-            image: '../imgs/MayaC_Module7_project.jpg'
-        }
-    ];
+    
+    // Modal functionality
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("video");
+    const closeBtn = document.querySelector(".modal .close");
+    const fishIcon = document.querySelector(".fa-fish");
 
-    let currentArtworkIndex = 0;
-
-    function showArtwork(index) {
-        let artwork = artworks[index];
-        document.getElementById('title').innerText = artwork.title;
-        document.getElementById('dateCreated').innerText = artwork.dateCreated;
-        document.getElementById('medium').innerText = artwork.medium;
-        document.getElementById('artImage').src = artwork.image;
-    }
-
-    document.getElementById('nextArtwork').addEventListener('click', function() {
-        currentArtworkIndex = (currentArtworkIndex + 1) % artworks.length;
-        showArtwork(currentArtworkIndex);
+    fishIcon.addEventListener('click', function() {
+        modal.style.display = "block";
+        video.play();
     });
 
-    // Initialize the first artwork
-    showArtwork(currentArtworkIndex);
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = "none";
+        video.pause();
+        video.currentTime = 10;
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
 });

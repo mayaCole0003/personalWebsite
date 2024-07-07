@@ -26,18 +26,17 @@
             <img src="/imgs/maya-logo.png" alt="Maya Logo" class="logo">
         </div>
         <nav class="main-nav">
-            <a href="./pages/art.html">ARTIST</a>
-            <a href="#designer">DESIGNER</a>
-            <a href="/pages/allProjects.html" class="button-link">
+            <a>ARTIST</a>
+            <a>DESIGNER</a>
+            <a href="/pages/art.html" class="button-link">
                 <button class="explore-button">COLE</button>
             </a>
-            <a href="#developer">DEVELOPER</a>
-            <a href="#modeller">3D MODELLER</a>
+            <a>DEVELOPER</a>
+            <a>3D MODELLER</a>
         </nav>
     </header>
     
     <main>
-        <!-- Expanding Circle -->
         <div id="expanding-circle" class="expanding-circle">
             <div id="circle-content" class="circle-content">
                 <button id="close-button" class="close-button">Back</button>
@@ -46,13 +45,23 @@
                     <a href="https://lab2-quizapp-mayafcole.onrender.com/">
                     <img src="/imgs/clothesIMG.png" alt="Clothes Image" class="circle-item">
                     </a>
-                    <img src="/imgs/3dmodel.png" alt="3d model Image" class="circle-item">
+                    <a href="https://drive.google.com/file/d/1rgrblJBuzLdJ0ezgFMQ2Ar-iogRrgW2Y/view?resourcekey">
+                        <img src="/imgs/3dmodel.png" alt="3d model Image" class="circle-item">
+                    </a>
                     <img src="/imgs/PANTS.png" alt="pants Image" class="circle-item">
                     <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item">
                     <img src="/imgs/seadragon.png" alt="Second Image 2" class="circle-item">
                     <i class="fa-solid fa-fish circle-item"></i>
+                    <div id="videoModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <video id="video" controls>
+                                <source src="/imgs/MayaC__TUES_FINAL.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                     <img src="/imgs/earbuds.png" alt="Second Image 3" class="circle-item">
-                    <!-- <img src="/imgs/second3.png" alt="Second Image 3" class="circle-item"> -->
                 </div>
             </div>
         </div>
@@ -91,7 +100,7 @@
                     </div>
 
                     <div class="carousel-item">
-                        <a href="/pages/case.html">
+                        <a href="/pages/case4.html">
                             <img src="/imgs/mahjouba_mockup.png" class="mockup"  alt="Project Image4">
                         </a>
                         <div class="carousel-caption">
@@ -142,16 +151,49 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // JavaScript to handle the expanding and collapsing of the circle
         document.getElementById('wand').addEventListener('click', function() {
-    document.getElementById('expanding-circle').classList.toggle('expand');
-    document.getElementById('circle-content').classList.toggle('visible');
-});
+            document.getElementById('expanding-circle').classList.toggle('expand');
+            document.getElementById('circle-content').classList.toggle('visible');
+        });
 
-document.getElementById('close-button').addEventListener('click', function() {
-    document.getElementById('expanding-circle').classList.remove('expand');
-    document.getElementById('circle-content').classList.remove('visible');
-});
+        document.getElementById('close-button').addEventListener('click', function() {
+            document.getElementById('expanding-circle').classList.remove('expand');
+            document.getElementById('circle-content').classList.remove('visible');
+        });
 
+        $('.carousel').carousel({
+            interval: 2000
+        });
+
+        const carouselImages = document.querySelectorAll('.carousel-item img');
+        carouselImages.forEach(img => {
+            img.style.objectFit = 'cover';
+            img.style.height = '500px';
+        });
+
+        // Add event listener to fish icon for video modal
+        const modal = document.getElementById("videoModal");
+        const video = document.getElementById("video");
+        const closeBtn = document.querySelector(".modal .close");
+        const fishIcon = document.querySelector(".fa-fish");
+
+        fishIcon.addEventListener('click', function() {
+            modal.style.display = "block";
+            video.play();
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                video.pause();
+                video.currentTime = 0;
+            }
+        });
     </script>
 </body>

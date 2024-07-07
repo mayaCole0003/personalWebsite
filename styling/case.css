@@ -256,7 +256,7 @@ header p {
 
 .client-feedback-container {
     display: flex;
-    width: 650px;
+    width: 1000px;
     height: 300px;
     align-items: center;
     justify-content: center;
