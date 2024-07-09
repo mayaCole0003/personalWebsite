@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/pages/Quicksand-Variable.woff') format('woff2'), 
+         url('/pages/Quicksand-Variable.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('/imgs/sky.png');
     width: 100%;
     height: 100vh;
@@ -289,7 +298,6 @@ nav a {
     color: #504047;
     padding: 10px;
     font-size: 20px;
-    font-weight: bold;
 
 }
 
@@ -300,7 +308,7 @@ nav a {
 
 
 .title h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 6em;
     color: #504047;
     position: relative;
@@ -308,7 +316,7 @@ nav a {
 }
 
 .title p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2em;
     color: #504047;
     position: relative;
@@ -422,10 +430,10 @@ footer {
 
 
 #projects h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 45px;
     font-style: italic;
-    font-weight: normal;
+    font-weight: bold;
     color: orange;
     display: flex;
     justify-content: left;
@@ -550,14 +558,14 @@ footer {
 }
 
 .about-text h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 41px;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .about-text p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     margin-bottom: 20px;
 }

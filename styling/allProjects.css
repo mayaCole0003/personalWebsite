@@ -6,6 +6,14 @@ body {
     padding: 0;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
 .fa-solid.fa-wand-magic-sparkles {
     font-size: 60px;
     color: black;

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,6 +8,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.h2 {
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
