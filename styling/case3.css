@@ -931,6 +931,7 @@ footer p {
     text-align: center;
     margin-top: 20px; 
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .biblio-button {
@@ -943,8 +944,28 @@ footer p {
 }
 
 
+.caseStudiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
 
+}
 
+.caseImg {
+    width: 200px;
+}
+
+.caseStudy p {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.caseStudy a {
+    text-decoration: none;
+    color: #504047;
+}
 
 
   @media (max-width: 60em) {

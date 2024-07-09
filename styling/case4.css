@@ -942,6 +942,29 @@ footer p {
     color:#ffffff
 }
 
+.caseStudiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+}
+
+.caseImg {
+    width: 200px;
+}
+
+.caseStudy p {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.caseStudy a {
+    text-decoration: none;
+    color: #504047;
+}
+
 
 
 

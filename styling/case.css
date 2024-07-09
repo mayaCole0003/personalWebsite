@@ -16,7 +16,7 @@ a {
 
 
 h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 36px;
     margin-left: -20px;
@@ -141,7 +141,6 @@ header p {
 /* // for user resarach img */
 .custom-img-size-num {
     width: 50%; 
-    /* max-width: 400px; Set a maximum width */
     height: auto;
     object-fit: contain; 
 }
@@ -222,7 +221,6 @@ header p {
 .grid-item {
     background-color: #ffffff;
     padding: 1rem;
-    /* border: 1px solid #ddd; */
     border-radius: 8px;
 }
 
@@ -928,6 +926,27 @@ footer p {
     transform: scale(1.1);
 }
 
+.caseStudiesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.caseImg {
+    width: 200px;
+}
+
+.caseStudy p {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.caseStudy a {
+    text-decoration: none;
+    color: #504047;
+}
 
 
 
