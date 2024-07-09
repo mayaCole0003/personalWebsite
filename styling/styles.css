@@ -309,6 +309,8 @@ nav a {
 .fa-solid.fa-chevron-down {
     font-size: 100px;
     color: #F8B75D;
+    transform: rotate(-12deg);
+
 }
 
 
@@ -360,7 +362,7 @@ nav a {
 }
 
 .secondSpacer {
-    height: 380px;
+    height: 600px;
 }
 
 .sspacer {
