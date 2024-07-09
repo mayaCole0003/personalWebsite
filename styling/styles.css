@@ -286,15 +286,16 @@ h2 {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #504047;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
 
 }
 
-.fa-solid.fa-turn-down {
-    font-size: 120px;
-    color: orange
+.fa-solid.fa-chevron-down {
+    font-size: 100px;
+    color: orange;
 }
 
 
@@ -350,7 +351,7 @@ nav a {
 }
 
 .sspacer {
-    height: 100px;
+    height: 140px;
 }
 
 
@@ -552,6 +553,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 41px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .about-text p {
