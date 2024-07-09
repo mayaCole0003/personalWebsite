@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/pages/Quicksand-Variable.woff') format('woff2'), 
+         url('/pages/Quicksand-Variable.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* colors scheme */
+/* orange: #F8B75D */
+/* light blue: #BCD8FA
+neon blue: #ABD6FF
+brown: #51312F */
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
     background: #ffffff;
     color: #504047;
     margin: 0;
@@ -53,21 +67,22 @@ body {
 }
 
 .carousel-caption {
-    position: fixed;
-    bottom: 10px;
-    left: 50%;
+    position: relative;
     color: black;
     text-align: center;
+    width: 120%;
+    padding-left: 5px;
 }
-
 
 .carousel-caption p {
     font-size: 18px;
     margin-top: 5px;
     text-align: center;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 
 #projects {
     display: flex;
@@ -82,6 +97,7 @@ body {
     max-width: 600px;
     height: auto;
     object-fit: contain;
+    margin-bottom: 30px;
 }
 
 .carousel-control-prev,

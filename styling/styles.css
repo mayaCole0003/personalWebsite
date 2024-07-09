@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+/* colors scheme */
+/* orange: #F8B75D */
+/* light blue: #BCD8FA
+neon blue: #ABD6FF
+brown: #51312F */
 
 body {
     font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,7 +88,7 @@ nav a {
 .expanding-circle.expand {
     width: 100vw;
     height: 100vh;
-    background-color: orange;
+    background-color:#F8B75D;
     z-index: 1;
     pointer-events: auto;
 }
@@ -225,7 +230,7 @@ h2 {
 
 .fa-solid.fa-wand-magic-sparkles {
     font-size: 60px;
-    color: orange;
+    color: #F8B75D;
 }
 
 .fa-solid.fa-fish {
@@ -303,7 +308,7 @@ nav a {
 
 .fa-solid.fa-chevron-down {
     font-size: 100px;
-    color: orange;
+    color: #F8B75D;
 }
 
 
@@ -375,7 +380,7 @@ nav a {
 
 .explore-button {
     width: 250px;
-    background-color: orange;
+    background-color: #F8B75D ;
     color: white;
     font-size: 16px;
     border: none;
@@ -420,11 +425,12 @@ footer {
 }
 
 #projects {
-    background-color: #504047;
+    background-color: rgba(81, 49, 47, 1);
     padding: 50px 0;
     text-align: center;
     z-index: -10;
     margin-top: -120px;
+    border: none;
 }
 
 
@@ -434,7 +440,7 @@ footer {
     font-size: 45px;
     font-style: italic;
     font-weight: bold;
-    color: orange;
+    color: #F8B75D;
     display: flex;
     justify-content: left;
     padding-left: 50px;
@@ -451,6 +457,7 @@ footer {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    border: none;
     padding: 20px;
 }
 
@@ -479,7 +486,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 500px;
     height: 500px;
-    background-color: orange;
+    background-color: #F8B75D;
     border-radius: 50%;
     z-index: -1;
     animation: expand-circle 0.5s forwards;
@@ -571,7 +578,7 @@ footer {
 }
 
 .more-button {
-    background-color: orange;
+    background-color: #F8B75D;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -580,7 +587,9 @@ footer {
 }
 
 .more-button:hover {
-    background-color: #e69500;
+    background-color: #F8B75D;
+    color: rgba(81, 49, 47, 1);
+    text-decoration: none;
 }
 
 
@@ -610,7 +619,7 @@ footer {
 }
 
 .contact-content a {
-    color: orange;
+    color: #F8B75D;
     text-decoration: none;
     font-weight: bold;
 }
