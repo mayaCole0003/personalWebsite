@@ -15,22 +15,55 @@
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
             </div>
             <div class="spacer"></div> 
-            <nav>
+            <!-- <nav class="links">
+                
                 <a href="https://www.linkedin.com/in/maya-f-cole/" rel="noopener noreferrer">LINKEDIN</a>
                 <a href="https://drive.google.com/file/d/1IoBCtbwW7i4-qQPNLH9sXtnsSyTYOXy-/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
                 <a href="https://github.com/mayaCole0003" target="_blank" rel="noopener noreferrer">GITHUB</a>
                 <a href="mailto:maya.f.cole.25@dartmouth.edu" target="_blank" rel="noopener noreferrer">EMAIL</a>
+            </nav> -->
+
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" id="open_button" class="hamburger-button">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                            
+                <div class="topnav_menu">
+                    <label for="nav-toggle" id="close_nav_button" class="close-button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <ul class="topnav_links">
+                        <li class="topnav_item">
+                            <a href="https://www.linkedin.com/in/maya-f-cole/" rel="noopener noreferrer">LINKEDIN</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="https://drive.google.com/file/d/1IoBCtbwW7i4-qQPNLH9sXtnsSyTYOXy-/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="https://github.com/mayaCole0003" target="_blank" rel="noopener noreferrer">GITHUB</a>
+                        </li>
+                        <li class="topnav_item">
+                            <a href="mailto:maya.f.cole.25@dartmouth.edu" target="_blank" rel="noopener noreferrer">EMAIL</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+            
+
+            </div>
         </div>
-        <div class="title">
-            <img src="/imgs/justMayaa.png" alt="maya Image" class="maya">
-            <div class="sspacer"></div>
-            <p>AN EXPERIENCED DESIGNER/DEVELOPER SEEKING OPPORTUNITIES </p>
-            <i class="fa-solid fa-chevron-down"></i>           
-            <div class="secondSpacer"></div>
-        </div>
+      
        
     </header>
+
+    <div class="title">
+        <img src="/imgs/justMayaa.png" alt="maya Image" class="maya">
+        <div class="sspacer"></div>
+        <p>AN EXPERIENCED DESIGNER/DEVELOPER SEEKING OPPORTUNITIES </p>
+        <i class="fa-solid fa-chevron-down"></i>           
+        <div class="secondSpacer"></div>
+    </div>
     
     <main>
         <div id="expanding-circle" class="expanding-circle">
@@ -174,7 +207,7 @@
             img.style.height = '500px';
         });
 
-        // Add event listener to fish icon for video modal
+        // event listerner fish icon for video modal
         const modal = document.getElementById("videoModal");
         const video = document.getElementById("video");
         const closeBtn = document.querySelector(".modal .close");
@@ -198,5 +231,19 @@
                 video.currentTime = 0;
             }
         });
+  // Responsive Navbar Toggle
+//   const mobileMenu = document.getElementById('mobile-menu');
+//         const navLinks = document.querySelector('.nav-links');
+
+//         mobileMenu.addEventListener('click', () => {
+//             navLinks.classList.toggle('active');
+//         });
+
+
+document.getElementById('open_button').addEventListener('click', function() {
+    document.querySelector('.topnav_menu').classList.toggle('visible');
+});
+
+    
     </script>
 </body>
