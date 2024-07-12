@@ -23,6 +23,28 @@ h3 {
 
 }
 
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+
+.biblio-button {
+    background:#E4DBFF;
+    border-color:#E4DBFF;
+    width:150px;
+    border-radius: 1000px;
+    height: 50px;
+    color: black;
+
+}
+
 header {
     position: relative;
     text-align: center;

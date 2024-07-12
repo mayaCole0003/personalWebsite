@@ -514,9 +514,7 @@ footer {
 .carousel-caption {
     position: absolute;
     top: 450px;
-    /* color: white; */
     color: #F8B75D;
-    /* color: rgba(81, 49, 47, 1); */
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -548,8 +546,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: white; */
-    color: rgba(81, 49, 47, 1);
+    color: white;
     text-decoration: none;
 }
 
