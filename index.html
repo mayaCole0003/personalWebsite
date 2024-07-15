@@ -52,7 +52,9 @@
 
     <div class="title">
         <img src="/imgs/justMayaa.png" alt="maya Image" class="maya">
-        <p>DESIGNER DEVELOPER ARTIST </p>
+        <p><strong><a href="/pages/case2.html">DESIGNER</a> & <a href="/pages/case3.html">DEVELOPER</a></strong></p>
+        <!-- <p>IS A DESIGNER DEVELOPER & ARTIST </p> -->
+
 
     <div class="button-container">
         <a class="button-link">
@@ -96,9 +98,7 @@
             </div>
         </div>
         
-        <section id="projects">
-            <!-- <img src="/imgs/skyGraphic.png" alt="sky graphic" class="skyGraphic" > -->
-            <!-- <h2>Recent Projects</h2> -->
+        <!-- <section id="projects">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <h2 class="recent-projects">RECENT PROJECTS</h2>
@@ -142,10 +142,10 @@
                             <h3>Mahjouba Initiative</h3>
                             <p>Reviving the Morrocoan craft sector (Coming soon)</p>
                         </div>
-                    </div>
+                    </div> -->
 
                    
-                </div>
+                <!-- </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <i class="fas fa-angle-left carousel-control-prev-icon"></i>
                     <span class="sr-only">Previous</span>
@@ -155,7 +155,52 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </section> -->
+
+        <section id="projects">
+            <h2 class="recent-projects">RECENT PROJECTS</h2>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="/pages/case2.html">
+                        <img src="/imgs/homePage-carthasis.png" class="grid-img" alt="Project Image1">
+                    </a>
+                    <div class="grid-caption">
+                        <h3>Catharsis</h3>
+                        <p>Working to repair relationships</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <a href="/pages/case.html">
+                        <img src="/imgs/dartpop-mockup.png" class="grid-img" alt="Project Image2">
+                    </a>
+                    <div class="grid-caption">
+                        <h3>Dartpop</h3>
+                        <p>Thrifting for students</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <a href="/pages/case3.html">
+                        <img src="/imgs/biblio_mockup.png" class="grid-img" alt="Project Image3">
+                    </a>
+                    <div class="grid-caption">
+                        <h3>Biblio</h3>
+                        <p>Community book exchange</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <a href="/pages/case4.html">
+                        <img src="/imgs/mahjouba_mockup.png" class="grid-img" alt="Project Image4">
+                    </a>
+                    <div class="grid-caption">
+                        <h3>Mahjouba Initiative</h3>
+                        <p>Reviving the Moroccan craft sector (Coming soon)</p>
+                    </div>
+                </div>
+            </div>
         </section>
+          
+          
         
         <section id="about">
             <div class="about-container">
@@ -191,39 +236,49 @@
             document.getElementById('expanding-circle').classList.toggle('expand');
             document.getElementById('circle-content').classList.toggle('visible');
         });
-
+    
         document.getElementById('close-button').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.remove('expand');
             document.getElementById('circle-content').classList.remove('visible');
         });
-
-        $('.carousel').carousel({
-            interval: 2000
+    
+        $(document).ready(function() {
+            $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                var itemsPerSlide = 2; // Number of items per slide
+                var totalItems = $('.carousel-item').length;
+                
+                if (idx >= totalItems - (itemsPerSlide - 1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (var i = 0; i < it; i++) {
+                        // append slides to end
+                        if (e.direction == "left") {
+                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                        } else {
+                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                        }
+                    }
+                }
+            });
         });
-
-        const carouselImages = document.querySelectorAll('.carousel-item img');
-        carouselImages.forEach(img => {
-            img.style.objectFit = 'cover';
-            img.style.height = '500px';
-        });
-
-        // event listerner fish icon for video modal
+    
         const modal = document.getElementById("videoModal");
         const video = document.getElementById("video");
         const closeBtn = document.querySelector(".modal .close");
         const fishIcon = document.querySelector(".fa-fish");
-
+    
         fishIcon.addEventListener('click', function() {
             modal.style.display = "block";
             video.play();
         });
-
+    
         closeBtn.addEventListener('click', function() {
             modal.style.display = "none";
             video.pause();
             video.currentTime = 0;
         });
-
+    
         window.addEventListener('click', function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -231,19 +286,17 @@
                 video.currentTime = 0;
             }
         });
-  // Responsive Navbar Toggle
-//   const mobileMenu = document.getElementById('mobile-menu');
-//         const navLinks = document.querySelector('.nav-links');
-
-//         mobileMenu.addEventListener('click', () => {
-//             navLinks.classList.toggle('active');
-//         });
-
-
-document.getElementById('open_button').addEventListener('click', function() {
-    document.querySelector('.topnav_menu').classList.toggle('visible');
-});
-
     
+        // Responsive Navbar Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+    
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    
+        document.getElementById('open_button').addEventListener('click', function() {
+            document.querySelector('.topnav_menu').classList.toggle('visible');
+        });
     </script>
-</body>
+    

@@ -442,7 +442,9 @@ footer {
 }
 
 #projects {
-    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
     background-image: url('/imgs/efg.png');
     background-size: cover;
     background-position: center;
@@ -459,42 +461,18 @@ footer {
 
 #projects h2 {
     font-family: 'Garamond', sans-serif;
-    font-weight: bold;
+    font-weight: thin;
     font-size: 45px;
     color:  #51312F;
     display: flex;
     justify-content: center;
-    padding-left: 50px;
+    margin-top: 30px;
+    padding-top: 50px;
 
 }
 
-.carousel {
-    position: relative;
-    margin: 45px auto;
-    width: 80%;
-    height: 700px;
-    /* background-color: rgba(81, 49, 47, 0.05); */
-    /* background-color: #BCD8FA; */
-    /* background-color: rgb(255, 255, 255, 0.23); */
-    /* border: 5px solid #51312F;
-    background-color: #51312F; */
-    border-radius: 35px;
-    /* box-shadow: 0 2px 8px rgba(32, 60, 96, 0.75); */
-    ;
 
-
-}
-
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    border: none;
-    padding: 20px;
-}
-
-.carousel-item {
+/* .carousel-item {
     display: none;
     position: relative;
     transition: transform 0.6s ease;
@@ -505,14 +483,14 @@ footer {
 #carousel-item {
     width: 500px;
     height: 8000px;
-}
+} */
 
-.carousel-item.active {
+/* .carousel-item.active {
     display: block;
     background: transparent;
     z-index: 0;
-}
-.carousel-item.active:hover::before {
+} */
+/* .carousel-item.active:hover::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -524,11 +502,11 @@ footer {
     border-radius: 50%;
     z-index: -1;
     animation: expand-circle 0.5s forwards;
-}
+} */
 
 
 
-.carousel-caption {
+/* .carousel-caption {
     position: absolute;
     top: 450px;
     color: #F8B75D;
@@ -542,16 +520,16 @@ footer {
     font-weight: bolder;
     font-family: 'Garamond', sans-serif;
 
-}
+} */
 
-.carousel-caption p {
+/* .carousel-caption p {
     font-size: 18px;
     margin-top: 10px;
     font-family: 'Garamond', sans-serif;
 
-}
+} */
 
-.carousel-control-prev,
+/* .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
     top: 90%;
@@ -564,9 +542,55 @@ footer {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+} */
+
+
+.grid-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
+.grid-item {
+    margin-top: 150px;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
 
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-img {
+    margin-top: 40px;
+    width: 60%;
+    height: auto;
+}
+
+.grid-caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-caption h3 {
+    margin: 0 0 10px;
+}
+
+.grid-caption p {
+    margin: 0;
+    color: #555;
+}
 
 
 
@@ -689,6 +713,11 @@ footer {
 
 
 @media (max-width: 40em) {
+    .title p a {
+        text-decoration: none;
+        color: #504047;
+    }
+
 
     .hamburger-button {
         display: inline-block;
@@ -737,7 +766,7 @@ footer {
         display: flex;
         justify-content: center;
         list-style: none;
-        font-weight: bold;
+        /* font-weight: bold; */
     }
 
     .topnav_item:hover {
@@ -750,16 +779,17 @@ footer {
     }
 
     .title p {
-        /* font-family: 'Garamond', Tahoma, Geneva, Verdana, sans-serif; */
-        /* font-family: 'Garamond', serif; */
         font-family: 'Garamond', sans-serif;
         font-weight: 100;
-        word-spacing: 200px;
+        word-spacing: 150px;
         font-size: 1.75em;
         color: #504047;
         position: relative;
-        /* font-style: italic; */
         margin-top: -90px;
+    }
+    .title p a {
+        text-decoration: none;
+        color: #504047;
     }
 
     .title {
