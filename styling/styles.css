@@ -360,41 +360,35 @@ nav a {
         top: 0;
     }
     50% {
-        top: -20px; /* Move up by 20px */
+        top: -20px; 
     }
+}
+
+.bibSpace { 
+    height:25px;
 }
 
 
 .explore-button {
-    width: 250px;
+    width:200px;
+    height: 40px;
     background-color: #F8B75D ;
+    color: #51312F;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.explore-button2 {
+    width:250px;
+    height: 40px;
+    background-color:#51312F;
     color: white;
     font-size: 16px;
     border: none;
     border-radius: 25px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    margin-bottom: 280px;
-    margin-top: 80px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-
-
-}
-
-.explore-button:hover {
-    animation: tilt-enlarge 1s infinite alternate;
-}
-
-@keyframes tilt-enlarge {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    50% {
-        transform: scale(1.2) rotate(-10deg);
-    }
-    100% {
-        transform: scale(1.2) rotate(10deg);
-    }
+    margin-top: 15px;
 }
 
 .button-container {

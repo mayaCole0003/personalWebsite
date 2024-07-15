@@ -98,64 +98,6 @@
             </div>
         </div>
         
-        <!-- <section id="projects">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <h2 class="recent-projects">RECENT PROJECTS</h2>
-
-                    <div class="carousel-item active">
-                        <a href="/pages/case2.html">
-                            <img src="/imgs/homePage-carthasis.png"  class="carousel-img" alt="Project Image1">
-                        </a>
-                        <div class="carousel-caption">
-                            <h3>Catharsis</h3>
-                            <p>Working to repair relationships</p>
-                        </div>
-
-                        
-                    </div>
-                    <div class="carousel-item">
-                        <a href="/pages/case.html">
-                            <img src="/imgs/dartpop-mockup.png" class="carousel-img" alt="Project Image2">
-                        </a>
-                        <div class="carousel-caption">
-                            <h3>Dartpop</h3>
-                            <p>Thrifting for students</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="/pages/case3.html">
-                            <img src="/imgs/biblio_mockup.png" class="carousel-img" class="mockup" alt="Project Image5">
-                        </a>
-                        <div class="carousel-caption">
-                            <h3>Biblio</h3>
-                            <p>Community book exchange</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <a href="/pages/case4.html">
-                            <img src="/imgs/mahjouba_mockup.png" class="mockup"  alt="Project Image4">
-                        </a>
-                        <div class="carousel-caption">
-                            <h3>Mahjouba Initiative</h3>
-                            <p>Reviving the Morrocoan craft sector (Coming soon)</p>
-                        </div>
-                    </div> -->
-
-                   
-                <!-- </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <i class="fas fa-angle-left carousel-control-prev-icon"></i>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <i class="fas fa-angle-right carousel-control-next-icon"></i>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section> -->
 
         <section id="projects">
             <h2 class="recent-projects">RECENT PROJECTS</h2>
@@ -168,6 +110,7 @@
                     <div class="grid-caption">
                         <h3>Catharsis</h3>
                         <p>Working to repair relationships</p>
+                        <button class="explore-button">UX/UI DESIGNER</button>
                     </div>
                 </div>
                 <div class="grid-item">
@@ -177,6 +120,9 @@
                     <div class="grid-caption">
                         <h3>Dartpop</h3>
                         <p>Thrifting for students</p>
+                        <button class="explore-button">UX/UI DESIGNER</button>
+                        <button class="explore-button2">FULLSTACK DEVELOPER</button>
+
                     </div>
                 </div>
                 <div class="grid-item">
@@ -184,8 +130,11 @@
                         <img src="/imgs/biblio_mockup.png" class="grid-img" alt="Project Image3">
                     </a>
                     <div class="grid-caption">
+                        <div class ="bibSpace"></div>
                         <h3>Biblio</h3>
                         <p>Community book exchange</p>
+                        <button class="explore-button">UX/UI DESIGNER</button>
+                        <button class="explore-button2">FULLSTACK DEVELOPER</button>
                     </div>
                 </div>
                 <div class="grid-item">
@@ -195,6 +144,7 @@
                     <div class="grid-caption">
                         <h3>Mahjouba Initiative</h3>
                         <p>Reviving the Moroccan craft sector (Coming soon)</p>
+                        <button class="explore-button">UX/UI DESIGNER</button>
                     </div>
                 </div>
             </div>
@@ -242,26 +192,7 @@
             document.getElementById('circle-content').classList.remove('visible');
         });
     
-        $(document).ready(function() {
-            $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
-                var $e = $(e.relatedTarget);
-                var idx = $e.index();
-                var itemsPerSlide = 2; // Number of items per slide
-                var totalItems = $('.carousel-item').length;
-                
-                if (idx >= totalItems - (itemsPerSlide - 1)) {
-                    var it = itemsPerSlide - (totalItems - idx);
-                    for (var i = 0; i < it; i++) {
-                        // append slides to end
-                        if (e.direction == "left") {
-                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                        } else {
-                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                        }
-                    }
-                }
-            });
-        });
+    
     
         const modal = document.getElementById("videoModal");
         const video = document.getElementById("video");
