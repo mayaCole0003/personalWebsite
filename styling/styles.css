@@ -6,7 +6,6 @@ brown: #51312F */
 
 body {
     font-family: 'Garamond', sans-serif;
-    /* background-image: url('/imgs/sky.png'); */
     background-image: url('/imgs/BESTSKY.png');
     background-repeat:repeat;
     width: 100%;
@@ -44,9 +43,7 @@ nav a {
     text-decoration: none;
 }
 
-/* //start of wand pop  contents */
-
-
+/* //start of wand overlay  contents */
 
 .icon-circle {
     cursor: pointer;
@@ -188,6 +185,11 @@ h2 {
 
 }
 
+.fa-solid.fa-xmark {
+    width: 90px;
+    height: 90px;
+}
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -198,9 +200,10 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    z-index: 90;
+    font-size: 96px;
+    z-index: 100;
 }
+
 
 
 .d3dmodel {
@@ -303,9 +306,6 @@ nav a {
     font-size: 18px;
     color: #F89705;
     padding-left: 10px;
-    /* transform: rotate(-12deg); */
-    /* margin-bottom: 90px; */
-
 }
 
 
@@ -712,10 +712,6 @@ footer {
  
 }
 
-.close-button {
-    display: none;
-    cursor: pointer;
-}
 
 .topnav_links a {
     color: inherit; 
