@@ -560,10 +560,13 @@ footer {
     border-radius: 8px;
     margin: 10px;
     transition: transform 0.2s;
+    text-decoration: none;
+
 }
 
 .grid-item:hover {
     transform: scale(1.05);
+    text-decoration: none;
 }
 
 .grid-img {
@@ -572,15 +575,28 @@ footer {
     height: auto;
 }
 
+.grid-item a {
+    text-decoration: none; 
+}
+
 .grid-caption {
     padding: 15px;
     text-align: center;
+    color: #51312F;
+    text-decoration: none;
 }
 
 .grid-caption h3 {
     margin: 0 0 10px;
+    color: #51312F;
+    text-decoration: none;
+
 }
 
+.grid-caption h3 a {
+    text-decoration: none;
+    color: #51312F;
+}
 .grid-caption p {
     margin: 0;
     color: #555;
