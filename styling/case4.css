@@ -185,7 +185,7 @@ header p {
 }
 
 .discovery-number {
-    color: teal;
+    color: #485AF4;
     font-size: 90px;
     font-weight: bold;
 }
@@ -830,7 +830,7 @@ footer p {
 
 .time-block {
     flex: 1;
-    background-color: #d1e7dd;
+    background-color: #CACBF8;
     padding: 1rem;
     margin: 0 0.5rem;
     border-radius: 8px;
