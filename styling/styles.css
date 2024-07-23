@@ -343,11 +343,12 @@ nav a {
 
 
 .maya {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     position: relative; 
     animation: moveUpDown 3s ease-in-out infinite; 
     margin-bottom: -30px;
+    margin-top: 60px;
 }
 
 .secondSpacer {
