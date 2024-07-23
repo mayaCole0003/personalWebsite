@@ -630,17 +630,32 @@ footer {
 }
 
 .more-button {
-    background-color: #F8B75D;
-    color: white;
+    color: inherit;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: flex-end;
+    animation: tilt 1s infinite;
+}
 
+.more-button:hover i {
+    color: rgba(81, 49, 47, 1);
+}
+
+@keyframes tilt {
+    0% { transform: rotate(-3deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+.fa-solid.fa-brush {
+    font-size: 80px;
+    color: #F8B75D;
 }
 
 .more-button:hover {
-    background-color: #F8B75D;
     color: rgba(81, 49, 47, 1);
     text-decoration: none;
 }
