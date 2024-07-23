@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background-image: url('/imgs/BESTSKY.png');
     background-repeat:repeat;
     width: 100%;
@@ -335,7 +335,7 @@ nav a {
 
 
 .title h1 {
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 6em;
     color: #504047;
     position: relative;
@@ -343,8 +343,7 @@ nav a {
 }
 
 .title p {
-    /* font-family: 'Garamond', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 100;
     word-spacing: 70px;
     font-size: 2em;
@@ -479,7 +478,7 @@ footer {
 
 
 #projects h2 {
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: thin;
     font-size: 45px;
     color:  #51312F;
@@ -557,14 +556,17 @@ footer {
 
 
 .about-container {
-    height: 600px;
+    height: 1250px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-content: center;
     padding: 20px;
-    border-radius: 10px;
-    /* background-image: url('/imgs/abouutMe.png'); */
+    background-image: url('/imgs/abouutMe.png');
     background-repeat: no-repeat;
+    padding-top: 60px;
+    margin-top: -350px;
 
 }
 
@@ -583,30 +585,47 @@ footer {
     width: 720px;
 }
 
+.hicontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+}
+
 .about-image {
     max-width: 850px;
-    max-height: 550px;
     border-radius: 10%;
-    margin-right: -250px; 
-    margin-bottom: 40px;
+    width: 500px;
+    margin-top: 20px;
 }
 
 .about-text {
-    max-width: 800px;
-    margin-left: 250px; 
+    max-width: 900px;
 }
 
-.about-text h3 {
-    font-family: 'Garamond', sans-serif;
-    font-size: 41px;
-    margin-bottom: 10px;
+#about h3 {
+    font-family: 'Helvetica', sans-serif;
     font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    padding: 30px;
+    padding-top: 50px;
     
 }
 
 .about-text p {
-    font-family: 'Garamond', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ .orangebar {
+    height: 35px;
+    width: 100%;
+    background-color: #F8B75D;
     margin-bottom: 20px;
 }
 
@@ -617,6 +636,7 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+
 }
 
 .more-button:hover {
@@ -738,7 +758,7 @@ footer {
 /* Display links in a row on larger screens */
 @media (min-width: 40em) {
     .topnav_links {
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Helvetica', sans-serif;
         display: flex;
         justify-content: center;
         list-style: none;
@@ -755,7 +775,7 @@ footer {
     }
 
     .title p {
-        font-family: 'Garamond', sans-serif;
+        font-family: 'Helvetica', sans-serif;
         font-weight: 100;
         word-spacing: 150px;
         font-size: 1.75em;
