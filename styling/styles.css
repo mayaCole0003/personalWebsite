@@ -4,6 +4,10 @@
 neon blue: #ABD6FF
 brown: #51312F */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Garamond', sans-serif;
     background-image: url('/imgs/BESTSKY.png');
@@ -411,7 +415,7 @@ nav a {
   }
   
 
-.biblio-button {
+.bibliobutton {
     border: none;
     background: transparent;
     width:150px;
@@ -444,12 +448,11 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: red; */
-    /* padding: 50px 0; */
     text-align: center;
     z-index: -10;
     margin-top: -120px;
     margin-bottom: 300px;
+    transition: opacity 1s ease-in;
 }
 
 

@@ -23,9 +23,6 @@
                 </label>
                             
                 <div class="topnav_menu">
-                    <!-- <label for="nav-toggle" id="close_nav_button" class="close-button">
-                        <i class="fa-solid fa-xmark"></i>
-                    </label> -->
                     <ul class="topnav_links">
                         <li class="topnav_item">
                             <a href="https://www.linkedin.com/in/maya-f-cole/" rel="noopener noreferrer">LINKEDIN</a>
@@ -56,8 +53,8 @@
 
 
     <div class="button-container">
-        <a class="button-link">
-            <button class="biblio-button">EXPLORE<i class="fa-solid fa-arrow-down"></i></i>     
+        <a href="#projects">
+            <button class="bibliobutton">EXPLORE<i class="fa-solid fa-arrow-down"></i></i>     
             </button>
         </a>
     </div>
@@ -67,7 +64,6 @@
     <main>
         <div id="expanding-circle" class="expanding-circle">
             <div id="circle-content" class="circle-content">
-                <!-- <button id="close-button" class="close-button">Back</button> -->
                 <button id="close-button" class="close-button">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -182,12 +178,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-         document.getElementById("exploreButton").addEventListener("click", function() {
-        document.getElementById("projects").scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-
         document.getElementById('wand').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.toggle('expand');
             document.getElementById('circle-content').classList.toggle('visible');
@@ -226,9 +216,11 @@
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
     
-        mobileMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        if (mobileMenu && navLinks) {
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
     
         document.getElementById('open_button').addEventListener('click', function() {
             document.querySelector('.topnav_menu').classList.toggle('visible');
