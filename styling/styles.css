@@ -47,6 +47,27 @@ nav a {
     text-decoration: none;
 }
 
+.fa-brands.fa-linkedin {
+    font-size: 40px;
+    color: #F8B75D;
+
+}
+
+.fa-regular.fa-file {
+    font-size: 40px;
+    color: #F8B75D
+}
+
+.fa-brands.fa-github{
+    font-size: 40px;
+    color: #F8B75D
+}
+
+.fa-regular.fa-envelope {
+    font-size: 40px;
+    color: #F8B75D
+}
+
 /* //start of wand overlay  contents */
 
 .icon-circle {
@@ -470,79 +491,6 @@ footer {
 }
 
 
-/* .carousel-item {
-    display: none;
-    position: relative;
-    transition: transform 0.6s ease;
-    text-align: center;
-    padding: 40px;
-}
-
-#carousel-item {
-    width: 500px;
-    height: 8000px;
-} */
-
-/* .carousel-item.active {
-    display: block;
-    background: transparent;
-    z-index: 0;
-} */
-/* .carousel-item.active:hover::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
-    background-color: #F8B75D;
-    border-radius: 50%;
-    z-index: -1;
-    animation: expand-circle 0.5s forwards;
-} */
-
-
-
-/* .carousel-caption {
-    position: absolute;
-    top: 450px;
-    color: #F8B75D;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 70px;
-}
-.carousel-caption h3 {
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: 'Garamond', sans-serif;
-
-} */
-
-/* .carousel-caption p {
-    font-size: 18px;
-    margin-top: 10px;
-    font-family: 'Garamond', sans-serif;
-
-} */
-
-/* .carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 90%;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-} */
-
-
 .grid-container {
     display: flex;
     gap: 10px;
@@ -718,6 +666,7 @@ footer {
 }
 
 
+
 .topnav_links a {
     color: inherit; 
     text-decoration: none; 
@@ -725,6 +674,7 @@ footer {
 
   .topnav_links a:hover {
     color: #F8B75D; 
+    font-style: italic;
   }
 
 
@@ -747,7 +697,6 @@ footer {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: #BCD8FA;
         opacity: 0;
         transition: opacity 0.3s ease;
     }
