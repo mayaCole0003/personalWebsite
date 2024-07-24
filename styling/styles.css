@@ -350,6 +350,23 @@ nav a {
     font-style: italic;
 }
 
+.title1 p a {
+    text-decoration: none;
+    color: #504047;
+}
+
+.title1 p {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    word-spacing: 70px;
+    font-size: 2em;
+    color: #504047;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -70px;
+}
+
+
 .title p {
     font-family: 'Helvetica', sans-serif;
     font-weight: 100;
