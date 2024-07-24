@@ -49,24 +49,30 @@ nav a {
     text-decoration: none;
 }
 
-.fa-brands.fa-linkedin {
-    font-size: 40px;
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.fa-brands.fa-linkedin-in {
+    padding-left: 80px;
+    font-size: 60px; 
     color: #F8B75D;
-
 }
 
+
 .fa-regular.fa-file {
-    font-size: 40px;
+    font-size: 60px;
     color: #F8B75D
 }
 
 .fa-brands.fa-github{
-    font-size: 40px;
+    font-size: 60px; 
     color: #F8B75D
 }
 
 .fa-regular.fa-envelope {
-    font-size: 40px;
+    font-size: 60px; 
     color: #F8B75D
 }
 
@@ -682,6 +688,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    
 }
 
 .contact-icon-circle {
