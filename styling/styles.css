@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: 'Helvetica', sans-serif;
     background-image: url('/imgs/BESTSKY.png');
@@ -28,8 +29,9 @@ header {
     text-align: center;
     padding: 20px;
     z-index: 1;
-
 }
+
+
 
 .header-content {
     display: flex;
@@ -637,7 +639,7 @@ footer {
     transition: background-color 0.3s;
     display: flex;
     justify-content: flex-end;
-    animation: tilt 1s infinite;
+    animation: tilt 5s infinite;
 }
 
 .more-button:hover i {
@@ -791,7 +793,7 @@ footer {
 
     .title p {
         font-family: 'Helvetica', sans-serif;
-        font-weight: 100;
+        font-weight: 800;
         word-spacing: 150px;
         font-size: 1.75em;
         color: #504047;
