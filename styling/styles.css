@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Helvetica', sans-serif;
-    background-image: url('/imgs/BESTSKY.png');
+    background-image: url('/imgs/altSky.png');
     background-repeat:repeat;
     width: 100%;
     height: max-content;
@@ -369,7 +369,7 @@ nav a {
 
 
 .maya {
-    max-width: 80%;
+    max-width: 75%;
     height: auto;
     position: relative; 
     animation: moveUpDown 3s ease-in-out infinite; 
@@ -473,7 +473,7 @@ footer {
     text-align: center;
     z-index: -10;
     margin-top: -120px;
-    margin-bottom: 300px;
+    margin-bottom: 400px;
     transition: opacity 1s ease-in;
 }
 
