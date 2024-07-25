@@ -19,6 +19,29 @@ h3 {
 
 }
 
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.centered-img {
+    width: 210%; 
+    height:210%;
+}
+
+.wireframes {
+    padding-top: 40px;
+}
+
 .button-container {
     display: flex;
     flex-direction: column;
@@ -992,6 +1015,14 @@ footer p {
     align-items: center;
     text-align: center;
     margin-top: 20px; 
+}
+
+.wireframe-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.3s ease;
 }
 
 .biblio-sketches-image {
