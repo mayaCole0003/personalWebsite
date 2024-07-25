@@ -1,3 +1,8 @@
+.html {
+    background-color: #ffffff;
+
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -113,9 +118,7 @@ header p {
     color: #6c757d;
 }
 
-.container {
-    background-color: transparent;
-}
+
 
 .flex-container {
     display: flex;
