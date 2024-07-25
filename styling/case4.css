@@ -552,6 +552,13 @@ footer {
     text-decoration: none;
 }
 
+
+.centered-img {
+    width: 240%;
+    height: 60%;
+}
+
+
 footer p {
     margin: 0;
     font-size: 0.9rem;
