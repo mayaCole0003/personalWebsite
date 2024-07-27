@@ -711,10 +711,10 @@ footer {
 }
 
 .contact-icon-circle {
-    width: 70px;
-    height: 70px;
-    background-color: rgba(240, 217, 216, 0.3);
-    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background-color: #BCD8FA;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
