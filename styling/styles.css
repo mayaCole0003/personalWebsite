@@ -833,11 +833,10 @@ footer {
     .title p {
         font-family: 'Helvetica', sans-serif;
         font-weight: 800;
-        word-spacing: 150px;
+        word-spacing: 50px;
         font-size: 1.75em;
         color: #504047;
-        position: relative;
-        margin-top: -90px;
+        margin-top: -00px;
     }
     .title p a {
         text-decoration: none;
