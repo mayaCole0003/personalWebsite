@@ -75,7 +75,6 @@
                 <button id="close-button" class="close-button">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-
                 <h2> Click around for some suprises!</h2>
                 <div class="circle-row">
                     <img src="/imgs/clothesIMG.png" alt="Clothes Image" class="circle-item" onclick="window.location.href='https://lab2-quizapp-mayafcole.onrender.com/'">
@@ -86,8 +85,9 @@
 
                     <img src="/imgs/PANTS.png" alt="pants Image" class="circle-item" onclick="window.location.href='https://lab2-quizapp-mayafcole.onrender.com/'">
                   
-                    <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item">
-                    <img src="/imgs/seadragon.png" alt="Second Image 2" class="circle-item">
+                    <!-- <img src="/imgs/planetIMG.png" alt="Second Image 1" class="circle-item"> -->
+                    <i class="fa-solid fa-plane-up circle-item"></i>                   
+                    <img id="seadragon" src="/imgs/seadragon.png" alt="Second Image 2" class="circle-item">
                     <i class="fa-solid fa-fish circle-item"></i>
                     <div id="videoModal" class="modal">
                         <div class="modal-content">
@@ -202,7 +202,7 @@
                 </div>
                 <div class="icon-row">
                     <div class="icon">
-                        <img src="/imgs/abstract.png" alt="Figma">
+                        <i class="fa-brands fa-figma"></i>                       
                         <p>Figma</p>
                     </div>
                     <div class="icon">
@@ -211,13 +211,13 @@
                     </div>
                     <div class="icon">
                         <img src="/imgs/abstract.png" alt="Node.js">
-                        <p>Node.js</p>
+                        <p>Python</p>
                     </div>
                 </div>
                 <div class="icon-row">
                     <div class="icon">
                         <img src="/imgs/abstract.png" alt="MongoDB">
-                        <p>MongoDB</p>
+                        <p>Visual Studio Code</p>
                     </div>
                     <div class="icon">
                         <img src="/imgs/abstract.png" alt="MySQL">
@@ -229,9 +229,16 @@
                     </div>
                 </div>
             </div>
-        </section>
-         -->
-     
+        </section> -->
+        
+        <div id="animalModal" class="seamodal">
+            <div class="seamodal-content">
+                <span class="seaclose">&times;</span>
+                <p>Leafy seadragons are my favorite animal of all time!</p>
+                <p>Did you know their color depends on how deep in the ocean they live? </p>
+
+            </div>
+        </div>
      
 
     <footer class="text-center py-4">
@@ -270,7 +277,6 @@
             document.getElementById('circle-content').classList.remove('visible');
         });
     
-    
         const modal = document.getElementById("videoModal");
         const video = document.getElementById("video");
         const closeBtn = document.querySelector(".modal .close");
@@ -307,18 +313,37 @@
         document.getElementById('open_button').addEventListener('click', function() {
             document.querySelector('.topnav_menu').classList.toggle('visible');
         });
-
+    
         window.addEventListener('load', function() {
             const loadingScreen = document.getElementById('loading-screen');
             const content = document.getElementById('content');
-
+    
             if (loadingScreen && content) {
                 loadingScreen.style.display = 'none';
                 content.style.display = 'block';
-
+    
                 document.body.style.overflow = 'auto';
             }
         });
 
+       
+
+    
+        var animalModal = document.getElementById("animalModal");
+        var seadragonImg = document.getElementById("seadragon");
+        var span = document.getElementsByClassName("seaclose")[0];
+            seadragonImg.onclick = function() {
+            animalModal.style.display = "block";
+        }
+    
+        span.onclick = function() {
+            animalModal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+            if (event.target == animalModal) {
+                animalModal.style.display = "none";
+            }
+        }
     </script>
     
