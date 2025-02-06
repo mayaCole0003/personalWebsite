@@ -537,18 +537,24 @@ footer {
 }
 
 #projects {
-    justify-content: center;
-    align-items: center;
     height: 400px;
-    /* background-image: url('/imgs/efg.png'); */
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     text-align: center;
     z-index: -10;
-    margin-top: -120px;
-    margin-bottom: 400px;
     transition: opacity 1s ease-in;
+    margin-bottom: 1000px;
+    align-items: center;
+
+}
+
+#projects h1 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+    color:  #f3942f;
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -565,42 +571,46 @@ footer {
 
 }
 
-
 .grid-container {
-    display: flex;
-    gap: 10px;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    width: 100%; 
+    max-width: 1600px;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    justify-items: center;
-    justify-content: center;
-    margin-top: 60px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
 }
 
+
 .grid-item {
-    margin-top: 150px;
-    width: 350px;
-    height: 450px;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgb(37, 37, 37);
-    border-radius: 8px;
-    margin: 10px;
-    transition: transform 0.2s;
-    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 1px solid #888;
+    align-items: center;
+    border-radius: 16px; 
+    width:100%;
+    max-width: 600px; 
+    height: auto;
+    max-width: 800px; 
+    text-align: left;
+    justify-items: center;
+    margin: 0 auto;
 
 }
 
 .grid-item:hover {
-    transform: scale(1.05);
-    text-decoration: none;
+    transform: scale(1.005);
 }
 
 .grid-img {
-    margin-top: 40px;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
+
 
 .grid-item a {
     text-decoration: none; 
@@ -641,21 +651,6 @@ footer {
 }
 
 
-.about-container {
-    height: 1050px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    padding: 20px;
-    background-image: url('/imgs/abouutMe.png');
-    background-repeat: no-repeat;
-    padding-top: 60px;
-    margin-top: -350px;
-
-}
-
 .about-text1 {
     text-align: center;
     text-transform: uppercase;
@@ -670,9 +665,6 @@ footer {
     margin-bottom: 20px; 
 }
 
-.fa-brands.fa-figma {
-
-}
 
 .icon {
     display: flex;
@@ -737,6 +729,11 @@ footer {
 .about-text {
     max-width: 400px;
 }
+
+#about  {
+    padding-top: -400px;
+}
+
 
 #about h3 {
     font-family: 'Helvetica', sans-serif;
