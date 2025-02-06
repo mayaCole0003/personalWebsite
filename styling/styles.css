@@ -393,21 +393,21 @@ nav a {
 
 .title h1 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 6em;
+    font-size: 220px;
     color: #504047;
     position: relative;
-    font-style: italic;
+    font-weight: 500;
+    padding-top: 300px;
 }
 
 .title1 p a {
     text-decoration: none;
-    color: #504047;
+    color: #161213;
 }
 
 .title1 p {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
-    word-spacing: 70px;
     font-size: 2em;
     color: #504047;
     text-align: center;
@@ -421,7 +421,7 @@ nav a {
     font-weight: 100;
     word-spacing: 70px;
     font-size: 2em;
-    color: #504047;
+    color: #7c7a7b;
     margin-top: -90px;
     width: 60%;
     text-align: center;
@@ -931,10 +931,9 @@ footer {
 
     .title p {
         font-family: 'Helvetica', sans-serif;
-        font-weight: 800;
         word-spacing: 50px;
         font-size: 1.75em;
-        color: #504047;
+        color: #535353;
         margin-top: -00px;
     }
     .title p a {
