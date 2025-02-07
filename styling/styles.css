@@ -19,8 +19,6 @@ body {
     background-size: cover;
     background-position: center;
     color: #140f11;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -117,7 +115,6 @@ nav a {
     pointer-events: auto;
 }
 
-/* Circle Content Styling */
 .circle-content {
     display: none;
     position: relative;
@@ -531,12 +528,10 @@ footer {
     height: 400px;
     background-size: cover;
     text-align: center;
-    z-index: -10;
     transition: opacity 1s ease-in;
     margin-bottom: 775px;
     align-items: center;
     justify-content: center;
-
 }
 
 #projects h1 {
@@ -611,6 +606,7 @@ footer {
     margin: 0 0 10px;
     color: #51312F;
     text-decoration: none;
+    font-size: 22px;
 
 }
 
@@ -690,7 +686,7 @@ footer {
 .container {
     display: flex;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     background: white;
     padding: 40px;
     border-radius: 10px;
@@ -699,7 +695,7 @@ footer {
 }
 
 .text-content {
-    flex: 1;
+    flex: 2;
 }
 
 .text-content h1 {
@@ -881,16 +877,55 @@ footer {
         margin: 0 10px;
     }
 
+    /* Style the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide dropdown menu initially */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Style dropdown links */
+.dropdown_menu li {
+    padding: 10px;
+}
+
+.dropdown_menu li a {
+    text-decoration: none; /* Remove underline */
+    display: block;
+    color: black;
+    padding: 8px 12px;
+}
+
+.dropdown_menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+
     .title p {
         font-family: 'Helvetica', sans-serif;
-        word-spacing: 50px;
+        word-spacing: 10px;
         font-size: 1.75em;
         color: #535353;
-        margin-top: -00px;
-    }
-    .title p a {
-        text-decoration: none;
-        color: #504047;
+        font-style: italic;
     }
 
     .title {
