@@ -877,13 +877,11 @@ footer {
         margin: 0 10px;
     }
 
-    /* Style the dropdown container */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Hide dropdown menu initially */
 .dropdown_menu {
     display: none;
     position: absolute;
@@ -894,13 +892,13 @@ footer {
     top: 100%;
     left: 0;
     border: 1px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    z-index: 10;
 }
 
 /* Style dropdown links */
 .dropdown_menu li {
     padding: 10px;
+    font-size: 30px;
 }
 
 .dropdown_menu li a {
