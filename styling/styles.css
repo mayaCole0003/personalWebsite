@@ -390,21 +390,34 @@ nav a {
     color: #660c1d;
     padding-left: 10px;
 }
-
-
+.title {
+    text-align: center;
+    overflow: hidden;
+}
 .title h1 {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 220px;
-    color: #140f11;
-    position: relative;
+    padding-top: 270px;
+    font-size: 180px;
     font-weight: 500;
-    padding-top: 300px;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 50%);
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+    background-clip: text;
+    animation: fillText 2s ease-in-out forwards;
 }
 
-.title1 p a {
-    text-decoration: none;
-    color: #161213;
+@keyframes fillText {
+    from {
+        background-position: 100% 0;
+    }
+    to {
+        background-position: 0% 0;
+    }
 }
+
+
 
 .title1 p {
     font-family: 'Helvetica', sans-serif;
@@ -417,28 +430,6 @@ nav a {
 }
 
 
-.title p {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 100;
-    word-spacing: 70px;
-    font-size: 2em;
-    color: #7c7a7b;
-    margin-top: -90px;
-    width: 60%;
-    text-align: center;
-}
-
-
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
 .maya {
@@ -497,7 +488,7 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 250px;
     padding-bottom: 350px;
     background-color: transparent;
 }
