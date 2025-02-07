@@ -59,27 +59,39 @@ body {
 
 .carousel-item.active {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
     z-index: 0;
     width: 900px;
     height: 700px;
+    gap: 20px;
 }
 
 .carousel-caption {
-    position: relative;
+    position: bottom;
     color: black;
-    text-align: center;
+    text-align: left;
     width: 120%;
-    padding-left: 5px;
+    height: 10px;
+    padding-left: 15px;
+    bottom: 40px;
+    left: 10px; 
 }
 
-.carousel-caption p {
-    font-size: 18px;
+.carousel-caption h1 {
+    font-size: 36px;
     margin-top: 5px;
-    text-align: center;
+    text-align: left;
     color: black;
-    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+.carousel-caption p {
+    font-size: 22px;
+    margin-top: 5px;
+    text-align: left;
+    color: black;
+    font-family: 'Helvetica', sans-serif;
 }
 
 
