@@ -113,6 +113,11 @@ header {
     color: #660c1d;
   }
 
+  .fa-solid.fa-shirt {
+    font-size: 90px;
+    color: yellow;
+  }
+
 
 .fa-solid.fa-fish {
     color: pink;
