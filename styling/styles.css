@@ -1,6 +1,7 @@
 /* colors scheme */
 
 /* Loading Screen */
+
 #loading-screen {
     position: fixed;
     width: 100%;
@@ -9,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 1s ease-out; /* Smooth fade-out */
+    transition: opacity 1s ease-out;
 }
 
 #loading-screen.hidden {
@@ -24,7 +25,7 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 5s linear infinite;
+    animation: spin 5s linear 1s;
 }
 
 @keyframes spin {
