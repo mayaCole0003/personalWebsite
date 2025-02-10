@@ -209,6 +209,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+
+window.addEventListener("load", () => {
+    const loadingScreen = document.getElementById("loading-screen");
+    const content = document.getElementById("content");
+
+    setTimeout(() => {
+        loadingScreen.classList.add("hidden"); // Start fade-out effect
+
+        setTimeout(() => {
+            loadingScreen.style.display = "none"; // Remove after fade-out
+            content.style.display = "block"; // Show main content
+        }, 1000); 
+        
+    }, 1500);
+});
+
+
    window.addEventListener('load', () => {
   const folder = document.getElementById('folder');
   
@@ -275,18 +292,7 @@
         document.getElementById('open_button').addEventListener('click', function() {
             document.querySelector('.topnav_menu').classList.toggle('visible');
         });
-    
-        window.addEventListener('load', function() {
-            const loadingScreen = document.getElementById('loading-screen');
-            const content = document.getElementById('content');
-    
-            if (loadingScreen && content) {
-                loadingScreen.style.display = 'none';
-                content.style.display = 'block';
-    
-                document.body.style.overflow = 'auto';
-            }
-        });
+    ;
 
        
 
