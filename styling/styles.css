@@ -277,6 +277,8 @@ header {
 .circle-item:nth-child(5) {
     top: 60%;
     left: 10%;
+    width: 400px;
+    height: 200px;
 }
 
 .circle-item:nth-child(6) {
