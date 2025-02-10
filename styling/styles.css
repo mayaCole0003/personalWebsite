@@ -78,15 +78,54 @@ header {
     text-decoration: none;
 }
 
-nav a {
-    text-decoration: none;
-}
 
 .icons{
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
+
+/* font awesome icons */
+
+.folder i {
+    transition: transform 0.3s ease; 
+    transition-delay: 0.5s;
+  }
+  
+  .folder.open i {
+    transform: rotate(90deg);
+  }
+
+  .fa-solid.fa-arrow-down {
+    font-size: 18px;
+    color: #660c1d;
+    padding-left: 10px;
+}
+  
+
+  .fa-solid.fa-folder {
+    font-size: 60px;
+    color: #660c1d;
+  }
+
+  .fa-solid.fa-folder-open {
+    font-size: 60px;
+    color: #660c1d;
+  }
+
+
+.fa-solid.fa-fish {
+    color: pink;
+    font-size: 210px
+
+}
+
+.fa-solid.fa-plane-up {
+    color: purple;
+    font-size: 100px;
+
+}
+
 .fa-brands.fa-linkedin-in {
     padding-left: 80px;
     font-size: 60px; 
@@ -111,10 +150,6 @@ nav a {
 
 /* //start of wand overlay  contents */
 
-.icon-circle {
-    cursor: pointer;
-}
-
 @keyframes expand-circle {
     0% {
         transform: translate(-50%, -50%) scale(0);
@@ -131,7 +166,6 @@ nav a {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    border-radius: 0%;
     transition: all 0.5s ease;
     z-index: 0;
     pointer-events: none;
@@ -269,15 +303,10 @@ nav a {
 h2 {
     z-index: 30; 
     font-size:100px;
-    color: rgb(217, 255, 0);
+    color: rgb(126, 255, 5);
     display: flex;
     justify-content: center;
 
-}
-
-.fa-solid.fa-xmark {
-    width: 90px;
-    height: 90px;
 }
 
 .close-button {
@@ -312,44 +341,7 @@ h2 {
     max-height: 100px; 
 }
 
-
-#div1 {
-    font-size:48px;
-  }
-
-  .folder i {
-    transition: transform 0.3s ease; 
-    transition-delay: 0.5s;
-  }
   
-  .folder.open i {
-    transform: rotate(90deg);
-  }
-  
-
-  .fa-solid.fa-folder {
-    font-size: 60px;
-    color: #660c1d;
-  }
-
-  .fa-solid.fa-folder-open {
-    font-size: 60px;
-    color: #660c1d;
-  }
-
-
-.fa-solid.fa-fish {
-    color: pink;
-    font-size: 210px
-
-}
-
-.fa-solid.fa-plane-up {
-    color: purple;
-    font-size: 100px;
-
-}
-
 .seamodal {
     display: none;
     position: fixed;
@@ -449,7 +441,7 @@ h2 {
 
 }
 
-/* //end of wand pop  contents */
+/* //end of wand pop-up contents */
 
 
 nav a {
@@ -460,11 +452,7 @@ nav a {
 
 }
 
-.fa-solid.fa-arrow-down {
-    font-size: 18px;
-    color: #660c1d;
-    padding-left: 10px;
-}
+
 .title {
     text-align: center;
     overflow: hidden;
@@ -797,6 +785,19 @@ footer {
     max-width: 450px;
 }
 
+.gallery {
+    display: flex;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
 
 .more-button {
     color: inherit;
@@ -843,7 +844,7 @@ footer {
 .contact-icon-circle {
     width: 75px;
     height: 75px;
-    background-color: #BCD8FA;
+    background-color: #000000;
     border-radius: 100%;
     display: flex;
     align-items: center;
