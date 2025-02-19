@@ -3,6 +3,16 @@ html {
     scroll-behavior: smooth;
 }
 
+footer {
+    background: #008080;
+    color:#E9E4FD;
+    padding: 2rem 0;
+    border-top: 1px solid #e9ecef;
+    width: 100%;
+}
+
+
+
 
 body {
     font-family: 'Helvetica', sans-serif;
@@ -666,6 +676,7 @@ footer {
     color:#E9E4FD;
     padding: 2rem 0;
     border-top: 1px solid #e9ecef;
+
 }
 
 
