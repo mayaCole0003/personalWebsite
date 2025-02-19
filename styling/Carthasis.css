@@ -127,6 +127,8 @@ header p {
 
 
 
+
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -145,7 +147,7 @@ header p {
 
 .flex-item.text {
     justify-content: space-between;
-    padding-left: 18rem;
+    padding-left: 4rem;
 }
 
 .flex-item.image {
@@ -396,6 +398,7 @@ header p {
 
 .section {
     padding: 4rem 1rem;
+    margin-top: -30px;
 }
 
 .section-title {

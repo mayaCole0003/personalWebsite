@@ -94,10 +94,12 @@ header p {
     padding: 1rem;
 }
 
+
 .flex-item.text {
     justify-content: space-between;
-    padding-left: 18rem;
+    padding-left: 4rem;
 }
+
 
 .flex-item.image {
     display: flex;
