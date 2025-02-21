@@ -434,10 +434,11 @@ nav a {
 }
 
 
-/* .title {
-    text-align: center;
+ .title {
+    background-image:url('/imgs/t.png');
+    text-align: right;
     overflow: hidden;
-} */
+}
 .title h1 {
     padding-top: 270px;
     font-size: 180px;
