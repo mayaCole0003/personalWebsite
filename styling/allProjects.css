@@ -1,36 +1,48 @@
-@font-face {
-    font-family: 'Quicksand';
-    src: url('/pages/Quicksand-Variable.woff') format('woff2'), 
-         url('/pages/Quicksand-Variable.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-/* colors scheme */
-/* orange: #F8B75D */
-/* light blue: #BCD8FA
-neon blue: #ABD6FF
-brown: #51312F */
 
 body {
-    font-family: 'Quicksand', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background: #ffffff;
-    color: #504047;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
 
-.header-content {
+
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    margin-top: 2rem;
+    text-align: left;
+    padding: 4rem 0;
+}
+.header {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 4rem;
+
 
 }
+.divider {
+    border-top: 3px solid black;
+    margin-bottom: 10px;
+    width: 90vw;
+}
+.content {
+    justify-content: space-between;
+    padding-left: 4rem;
+    font-size: 19px;
+    color: 
+
+}
+
 
 .fa-solid.fa-arrow-left-long {
     font-size: 60px;
     color: black;
+    padding-left: 4rem;
 }
 
 .carousel {
@@ -78,7 +90,7 @@ body {
 }
 
 .carousel-caption h1 {
-    font-size: 36px;
+    font-size: 26px;
     margin-top: 5px;
     text-align: left;
     color: black;

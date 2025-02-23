@@ -55,6 +55,11 @@ header {
 
 }
 
+.text-content a {
+     color: #660c1d;
+    
+}
+
 .header-content nav a {
     text-decoration: none;
 }
@@ -607,7 +612,7 @@ footer {
     background-size: cover;
     text-align: center;
     transition: opacity 1s ease-in;
-    margin-bottom: 1275px;
+    margin-bottom: 950px;
     align-items: center;
     justify-content: center;
 }
@@ -761,12 +766,14 @@ footer {
     margin-top: 250px;
 }
 
+
+
 .container {
     display: flex;
     align-items: center;
     max-width: 1200px;
     background: white;
-    padding: 40px;
+    padding: 0px;
     border-radius: 10px;
     border-color: black;
     border-width: 1px;
