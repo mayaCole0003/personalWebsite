@@ -30,6 +30,10 @@ p {
 }
 
 
+.row.resources {
+    width: 100%;
+}
+
 
 
 
@@ -850,8 +854,6 @@ footer p {
     margin: auto;
     border-radius: 3px;
     background: #ffffff;
-    overflow-x: scroll;
-    overflow-y: hidden; 
 }
 
 #resource-slider .arrow {
