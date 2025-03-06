@@ -7,6 +7,150 @@
     <link rel="icon" href="/imgs/smallerMayalOGO.png">
     <link rel="stylesheet" href="../styling/allProjects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .poster-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end;
+        }
+
+        .poster-container {
+            display: flex;
+            gap: -10px; 
+            flex-wrap: nowrap;
+            width: 1100px; /* Allows larger images */
+            justify-content: right;
+            align-items: right;
+        }
+
+        .poster {
+            flex: 1;
+            width: 350px; /* Adjust to control image size */
+            padding: 10px;
+            display: flex;
+            justify-content:left;
+            align-items: right;
+        }
+
+        .poster img {
+            width: 100%; /* Ensures images fit inside */
+            height: 100%;
+            object-fit: fill;
+        }
+        
+        .row.resources {
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        #resource-slider {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 42em;
+    margin: auto;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+#resource-slider .arrow {
+    cursor: pointer;
+    position: absolute;
+    width: 2em;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    background: transparent;
+}
+
+#resource-slider .arrow:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#resource-slider .arrow:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0.75em;
+    height: 0.75em;
+    margin: auto;
+    border-style: solid;
+}
+
+#resource-slider .prev {
+    left: 0;
+    bottom: 0;
+}
+
+.arrow next {
+    border: none;
+}
+
+#resource-slider .prev:before {
+    left: 0.25em;
+    border-width: 3px 0 0 3px;
+    transform: rotate(-45deg);
+}
+
+#resource-slider .next {
+    right: 0;
+    bottom: 0;
+}
+
+#resource-slider .next:before {
+    right: 0.25em;
+    border-width: 3px 3px 0 0;
+    transform: rotate(45deg);
+}
+
+#resource-slider .resource-slider-frame {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#resource-slider .resource-slider-item {
+    flex: 0 0 25%;
+    scroll-snap-align: start;
+}
+
+#resource-slider .resource-slider-inset {
+    margin: 0.5em 0.25em;
+}
+
+@media (max-width: 60em) {
+    #resource-slider .resource-slider-item {
+      flex: 0 0 33.33%;
+    }
+    #resource-slider {
+      height: 16em;
+    }
+}
+  
+@media (max-width: 45em) {
+    #resource-slider .resource-slider-item {
+      flex: 0 0 50%;
+    }
+}
+  
+@media (max-width: 30em) {
+    #resource-slider .resource-slider-item {
+      flex: 0 0 100%;
+    }
+    #resource-slider {
+      height: 19em;
+    }
+}
+
+
+    </style>
 </head>
 <body>
     <div class="header-content">
@@ -18,24 +162,88 @@
         <div class="spacer"></div>
     </div>
     
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">Collis After Dark</div>
-            <div class="content">
-                <!-- <div class="left">
-                    <p><strong>Scope:</strong> Poster and Graphics Design</p>
-                    <p><strong>Sept 2023 – June 2024</strong></p>
-                </div> -->
-                    <p>Working to encourage the Dartmouth student population to enjoy late-night weekend events. Designed posters as well as social media for event promotion.</p>
-            </div>
+    <div class="container">
+        <div class="header">Collis After Dark</div>
+        <div class="content">
+            <p>Working to encourage the Dartmouth student population to enjoy late-night weekend events. Designed posters as well as social media for event promotion. Software to create media assets: Adobe Creative Suite, Meta AI, Google Labs GenType </p>
+        </p>
+        </p>
 
         </div>
-    </body>
-    </html>
-    
+    </div>
 
-    <section id="projects">
+    <div class="poster-wrapper">
+        <!-- First Row -->
+        <div class="poster-container">
+            <div class="poster">
+                <img src="/imgs/late_nite_breakfast.png" alt="Late Night Breakfast Poster">
+            </div>
+            <div class="poster">
+                <img src="/imgs/cad_paint&pour.png"  alt="Paint and Pour Poster">
+            </div>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="poster-container">
+            <div class="poster">
+                <img src="/imgs/largeMentalistPoster.png" alt="Project Image2">
+            </div>
+            <div class="poster">
+                <img src="/imgs/new_glow_golf_poster.png"  alt="Glow Golf Poster">
+            </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="poster-container">
+            <div class="poster">
+                <img src="/imgs/rechargePoster.png" alt="Project Image2">
+            </div>
+            <div class="poster">
+                <img src="/imgs/BobRoss_paintnight.png"  alt="Glow Golf Poster">
+            </div>
+        </div>
+    </div>
+</div>
+    
+   
+ <div class="row resources">
+        <div class="carousel-container" id="resource-slider">
+          <div class="resource-slider-frame">
+            <div class="resource-slider-item">
+              <div class="resource-slider-inset">
+                <div class="resource">
+                    <img src="/imgs/lateNitebreakfast_insta.png" class="Artimg" alt="Project Image2">
+                </div>
+              </div>
+            </div>
+            <div class="resource-slider-item">
+              <div class="resource-slider-inset">
+                <div class="resource">
+                    <img src="/imgs/recharge_poster_insta.png" class="Artimg" alt="Project Image2">
+                </div>
+              </div>
+            </div>
+            <div class="resource-slider-item">
+              <div class="resource-slider-inset">
+                <div class="resource">
+                    <img src="/imgs/paint&pour_insta.png" class="Artimg" alt="Project Image2">
+                </div>
+              </div>
+            </div>
+            <div class="resource-slider-item">
+              <div class="resource-slider-inset">
+                <div class="resource">
+                    <img src="/imgs/the_mentalist.png" class="Artimg" alt="Project Image2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- <section id="projects">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -123,7 +331,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section>
+    </section> -->
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
