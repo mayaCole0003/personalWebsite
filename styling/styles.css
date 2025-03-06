@@ -142,6 +142,11 @@ header {
     color: #660c1d
 }
 
+.fa-brands.fa-tiktok {
+    font-size: 60px; 
+    color: #660c1d
+}
+
 /* //start of wand overlay  contents */
 
 @keyframes expand-circle {
