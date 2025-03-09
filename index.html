@@ -241,7 +241,11 @@ window.addEventListener("load", () => {
         document.getElementById('folder').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.toggle('expand');
             document.getElementById('circle-content').classList.toggle('visible');
+
+            // Toggle body scrolling
+            document.body.classList.toggle('no-scroll');
         });
+
     
         document.getElementById('close-button').addEventListener('click', function() {
             document.getElementById('expanding-circle').classList.remove('expand');

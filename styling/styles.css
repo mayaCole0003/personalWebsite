@@ -200,23 +200,22 @@ header {
 .circle-content {
     display: none;
     position: absolute;
-    width: 100%;
-    min-height: 100vh; /* Ensures the content can extend beyond the viewport */
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: auto;
 }
-
 
 .circle-content.visible {
     display: block;
     background-image: url('../imgs/updatedwebsitebackground.png');
     background-size: cover; 
-    background-position:top; 
+    background-position: top; 
     background-repeat: no-repeat;
-    background-attachment: scroll; 
-    overflow: scroll;
+    background-attachment: scroll;
+    overflow: auto;
     position: relative;
     width: 100%;
     min-height: 100vh;
-
 }
 
 .circle-item {
