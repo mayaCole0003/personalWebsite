@@ -458,9 +458,9 @@ nav a {
 }
 
 .title-video {
-    margin-top: 200px;
+    margin-top: 80px;
     width: 100%;
-    max-width: 1300px; /* Adjust as needed */
+    max-width: 1800px; /* Adjust as needed */
     height: 600px;
     z-index: 100;
 }
