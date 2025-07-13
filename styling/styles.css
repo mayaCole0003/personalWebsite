@@ -458,6 +458,7 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: -100;
 }
 
 .title-video {
@@ -465,7 +466,7 @@ nav a {
     width: 200%;
     max-width: max-content; /* Adjust as needed */
     height: 600px;
-    z-index: 1;
+    z-index: -1;
 }
 
 
