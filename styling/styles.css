@@ -673,6 +673,7 @@ footer {
     transition: transform 0.2s;
     text-decoration: none;
     width: 100%;  
+    background-color: #fff;
 }
 
 
