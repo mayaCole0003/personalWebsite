@@ -197,8 +197,9 @@
         <div class="client-feedback-container-1">
         <div class="client-feedback-container">
         <div class="client-feedback">
+            <p>A guiding quote for our research</p>
             <h2>“Proper communication will always be a main ingredient for building family solidarity and permanence.”</h2>
-            <p>-Marvin J. Ashton (Quote to inspire our research)</p>
+            <p>-Marvin J. Ashton</p>
         </div>
         </div>
     </div>
@@ -226,30 +227,36 @@
         </div>
     </section>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 order-md-2">
-                    <div class="image-container">
-                        <input type="checkbox" id="competitive-img" class="img-checkbox">
-                        <label for="competitive-img">
-                            <img src="/imgs/carthasis_industryResearch.png" alt="Competitive Analysis" class="img-fluid">
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-6 order-md-1">
-                    <h2>Competitive Analysis</h2>
-                    <p>Following a comprehensive market analysis, we identified existing apps that focus on fostering intergenerational communication and promoting healthy communication habits to guide our process. Here is the list:</p>
-                    <ul>
-                        <li>Mon Ami Companions</li>
-                        <li>Stitch - The Community for 50+</li>
-                        <li>Tandem</li>
-                        <li>TalkSpace</li>
-                        <li>Slowly</li>
-                    </ul>
-                    <p>After compiling these results, we brainstormed different solutions (seen below) that current apps do not address.</p>
-                </div>                
-            </div>
-        </div>
+   <div class="container">
+  <div class="row">
+    <!-- Image Column -->
+    <div class="col-md-6 order-md-2">
+      <div class="image-container text-center">
+        <img id="competitive-img" src="/imgs/carthasis_industryResearch.png" alt="Competitive Analysis" class="img-fluid" style="cursor: pointer;">
+      </div>
+    </div>
+
+    <!-- Text Column -->
+    <div class="col-md-6 order-md-1">
+      <h2>Competitive Analysis</h2>
+      <p>Following a comprehensive market analysis, we identified existing apps that focus on fostering intergenerational communication and promoting healthy communication habits to guide our process. Here is the list:</p>
+      <ul>
+        <li>Mon Ami Companions</li>
+        <li>Stitch - The Community for 50+</li>
+        <li>Tandem</li>
+        <li>TalkSpace</li>
+        <li>Slowly</li>
+      </ul>
+      <p>After compiling these results, we brainstormed different solutions (seen below) that current apps do not address.</p>
+    </div>                
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
         
 
         <div class="container">
@@ -293,16 +300,29 @@
                     <div class="discovery-number">1</div>
                     Journey Map
             </div>
+             <div class="process-"></div>
+            <div class="process-step-num">
+                    <div class="discovery-number">1</div>
+                    Iceberg Canvas
+            </div>
             
         </div>
     </section>
 
-       
+    
+    <section class="interviews-text">
+    <div class="container">
+    <p>User Interviews</p>
+    </div>
+    </section>
+
 
  <section class="empathyMaps">
     <div class="container">
 
         <div class="column">
+            <div class="col-md-3 left">
+            </div>
             <div class="col-md-6 center">
                 <img src="/imgs/carthasis_empathyMaps.png" alt="Design & Prototyping" class="centered-img">
             </div>
@@ -310,6 +330,12 @@
                 <img src="/imgs/carthasis_empathyMaps2.png" alt="Design & Prototyping" class="centered-img">
             </div>
         </div>
+
+        <section class="interviews-text">
+    <div class="container">
+    <p>User Personas</p>
+    </div>
+    </section>
                 
         <div class="row">
             <div class="col-md-6">
@@ -324,6 +350,8 @@
                     </div>
                 </div>
             </div>
+
+            
             <div class="col-md-6">
                 <div class="persona-container">
                     <div class="circle">
@@ -337,6 +365,12 @@
                 </div>
             </div>
         </div>
+
+           <section class="interviews-text">
+    <div class="container">
+    <p>Journey Map</p>
+    </div>
+    </section>
 
         <section class="section">
             <div class="container">
@@ -410,10 +444,13 @@
     </div>
 </section>
 
-
+   <section class="interviews-text">
+    <div class="container">
+    <p>Ethical Considerations</p>
+    </div>
+    </section>
 <section class="section bg-white">
     <div class="container">
-        <h2 class="section-title">Ethical considerations</h2>
         <h2 class="section-subtitle">What hidden ramifications can our app have?</h2>
         <div class="key-takeaways">
             <div class="takeaway">
@@ -441,13 +478,13 @@
     
      <!-- //Users identified a clear need for, -->
      <div class="users-idef-container">
-        <h2 class="user-title">Users identified a clear need for,</h2>
+        <h2 class="user-title">Users identified a clear need for</h2>
         <div class="container">
             <div class="row">
             <div class="col-md-3">
                 <h4>01 Target Audience</h4>
                 <ul>
-                    <li><strong>targeting current undergrads and their parents</strong></li>
+                    <li>targeting current undergrads and their parents</li>
                     <li>Young adults balancing academic, social, and family commitments</li>
                     <li>Parents wanting strong connections with their college-aged children</li>
                 </ul>
@@ -721,6 +758,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../carousel.js"></script>
+      <script src="../modal.js"></script>
+
 </body>
 </html>
 
