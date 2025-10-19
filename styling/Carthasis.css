@@ -471,7 +471,8 @@ header p {
 
 
 .section {
-    padding: 4rem 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     margin-top: -30px;
 }
 
@@ -529,9 +530,8 @@ header p {
     flex: 1;
     margin: 1rem;
     background-color: transparent;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .design-system img, .typography img {
@@ -569,9 +569,9 @@ header p {
 .lookback, .lookforward {
     flex: 1;
     margin: 1rem;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: #000;
 }
 
 .lookback h2, .lookforward h2 {
@@ -610,28 +610,28 @@ header p {
 .fa-brands.fa-linkedin-in {
     padding-left: 80px;
     font-size: 60px; 
-    color: #F89705;
+    color:white;
 }
 
 
 .fa-regular.fa-file {
     font-size: 60px;
-    color: #F89705;
+    color: white;
 }
 
 .fa-brands.fa-github{
     font-size: 60px; 
-    color: #F89705;
+    color: white;
 }
 
 .fa-regular.fa-envelope {
     font-size: 60px; 
-    color: #F89705;
+    color: white;
 }
 
 .fa-brands.fa-tiktok {
     font-size: 60px; 
-    color: #F89705;
+    color: white;
 }
 
 .bottomLogo {
@@ -657,12 +657,31 @@ header p {
     overflow: hidden;
 }
 
-
-footer {
-    background-color: rgba(82, 126, 243, 0.75);
-    color:white;
+.footer {
+    background-color: black; /* spans full width of page */
+    color: white;
+    width: 100%;
     padding: 2rem 0;
-    border-top: 1px solid #e9ecef;
+}
+
+.footer-content {
+    max-width: 1200px; /* limits content width */
+    margin: 0 auto;    /* centers content */
+    padding: 0 20px;   /* optional side padding */
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #F8B75D;
+}
+
+.footer .icons a {
+    margin: 0 0.5rem;
+    font-size: 24px;
 }
 
 
@@ -718,6 +737,7 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    color: #ffffff;
 }
 
 .key-takeaways {
