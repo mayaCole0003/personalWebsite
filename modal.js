@@ -1,17 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
+// modal.js
+document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImg");
-  const triggerImg = document.getElementById("competitive-img");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = document.querySelector(".close");
 
-  // Open modal when image clicked
-  triggerImg.addEventListener("click", function () {
-    modal.style.display = "flex"; // use flex for centering
-    modalImg.src = this.src;
+  // Open modal on image click
+  document.querySelectorAll("img.enlarge-on-click").forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
   });
 
   // Close modal when clicking outside the image
-  modal.addEventListener("click", function (event) {
-    if (event.target === modal) {
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
       modal.style.display = "none";
     }
   });
