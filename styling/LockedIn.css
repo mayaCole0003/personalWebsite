@@ -425,44 +425,47 @@ header p {
 
 .client-feedback-container-1 {
     display: flex;
-    width:auto;
-    height: 350px;
+    width:1600px;
+    height: 500px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 128, 128, 0.2);
+    background-color:#CA0013;
      margin: 0 auto;
     padding: 20px;
 }
 
 .client-feedback-container {
     display: flex;
-    width: 1000px;
-    height: 300px;
+    width: auto;
+    height: 350px;
     align-items: center;
     justify-content: center;
-    /* background-color: rgba(0, 128, 128, 0.2); */
-     margin: 0 auto;
+    margin: 0 auto;
     padding: 20px;
+}
+
+.client-feedback p {
+    text-align: center;
+    color: white;
 }
 
 .client-feedback {
     text-align: center;
-    font-style: italic;
-    color: #333;
+    color: white;
 }
 
 
 .client-feedback p:last-child {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #555;
+    color: white;
 }
 
 
 .client-feedback p:last-child {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #555;
+    color: white;
 }
 
 
