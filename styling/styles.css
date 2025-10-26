@@ -619,11 +619,11 @@ footer {
 }
 
 #projects {
-    height: 400px;
+    height: 800px;
     background-size: cover;
     text-align: center;
     transition: opacity 1s ease-in;
-    margin-bottom: 950px;
+    margin-bottom: 900px;
     align-items: center;
     justify-content: center;
 }
